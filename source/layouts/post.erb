@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <%= partial "layouts/partials/head" %>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../stylesheets/main.css">
+  <title>Digi, Aye?</title>
+</head>
+    <body>
+
+      <%= partial "layouts/partials/min-header" %>
+
+        <div class="main" role="main" id="main">
+          <div class="content-container">
+            <div class="content-margin">
+              <div class="post-description">
+                <h1>
+                  <%= current_page.data.title %>
+                </h1>
+                <h2>
+                  <%= current_page.data.subtitle %>
+                </h2>
+                <hr />
+              </div>
+              <div class="post-content">
+                <article>
+                  <%= yield %>
+                </article>
+                <hr />
+                <span class="post-meta">
+                  Published <em><%= current_page.date.strftime('%e %B %Y') %></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <%= partial "layouts/partials/footer" %> -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+          window.sr = ScrollReveal();
+          console.log(sr.reveal);
+          sr.reveal('article p', {
+            scale: 1
+          });
+        </script>
+    </body>
+
+</html>

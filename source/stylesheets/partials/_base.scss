@@ -1,0 +1,245 @@
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+/**
+ * Links
+ */
+a {
+  color: $grey-color-light;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: underline;
+    transform: rotate(-2deg) translateY(-5px);
+  }
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: 'white';
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit;
+  
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Code formatting
+ */
+// pre,
+// code {
+//   font-size: 0.8em;
+//   border-radius: 3px;
+//   background-color: hsla(0, 10, 1, 0.5);
+//   width: 100%;
+// }
+
+// code {
+//   padding: 1em;
+// }
+
+// pre {
+//   padding: 8px 12px;
+//   overflow-x: auto;
+
+//   > code {
+//     border: 0;
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+// }
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/**
+ * Icons
+ */
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #{$grey-color};
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+.social-media-list {
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: $spacing-unit;
+  width: 100%;
+  text-align: $table-text-align;
+  border-collapse: collapse;
+  tr {
+    &:nth-child(even) {
+      background-color: lighten($grey-color-light, 6%);
+    }
+  }
+  th, td {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
+  th {
+    background-color: lighten($grey-color-light, 3%);
+  }
+}
+
+
+/**
+* Base Stuff. Probably need to partialise this.
+*/
+
+h1 {
+  font-family: $heading-font-family;
+  padding-bottom: 0.8em;
+  font-weight: 900;
+  @include relative-font-size(5);
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: $heading-font-family;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+h3 {
+  @include relative-font-size(2);
+  font-weight: 300;
+}
+
+p ~ * {
+  font-size: 1.4em;
+  line-height: $base-line-height*1.1;
+  margin-bottom: 2.1em;
+  font-weight: 100;
+}
+
+body {
+  min-width: 100;
+  font: $base-font-size;
+}
+
+hr { 
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0); 
+  margin: 1em 0 1em 0;
+}

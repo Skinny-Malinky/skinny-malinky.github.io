@@ -1,0 +1,48 @@
+.main {
+  background: linear-gradient(#FF5656, #EC9150);
+  position: relative;
+  display: block;
+  color: white;
+  overflow:hidden;
+}
+
+.summary {
+
+  margin-bottom: 8em;
+  padding: 3em 4em 3em 4em;
+  transition: all 0.3s ease-in-out;
+  h2 {
+    margin-bottom: 0;
+  }
+  h3 {
+    font-weight: 100;
+    font-style: italic;
+    @include relative-font-size(2);
+  }
+  &:hover {
+    background-color: hsla(100,100,100,0.1);
+    border-radius: 10px;
+  }
+}
+
+.content-margin {
+  margin: 0 1em 0 1em;
+}
+.content-margin > h1 {
+  padding-left: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+em {
+  font-weight: 400;
+  font-style: normal;
+}
+
+#clean-text {
+  a, a:hover p, a:visited {
+  text-decoration-line: none;
+  text-decoration-style: none;
+  text-decoration: none;
+  color: white;
+  }
+}
