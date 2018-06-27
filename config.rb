@@ -50,6 +50,7 @@ page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  config[:host] = "http://localhost:4567"
 end
 
 Time.zone = "London"
