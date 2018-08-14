@@ -1,24 +1,5 @@
 <header class="site-header" role="banner">
-  
-  <div class="intro">
-    <%= link_to "Struan Fraser", config[:host], :class => "site-title" %>
-
-    <div class="site-capabilities">
-      <ul>
-        <li>Product Design</li>
-        <li>Prototyping</li>
-        <li>User Research</li>
-        <li>Creative Code</li>
-      </ul>
-    </div>
-    <%= partial "layouts/partials/contact-details" %>
-
-  <div class="hand-container">
-    <div class="hover-container">
-      <div class="red-hand"></div>
-      <div class="green-hand"></div>
-      <div class="blue-hand"></div>
-    </div>
-  </div>
-
+  <%= partial "layouts/partials/intro-blog-tags" %>
+  <%= partial "layouts/partials/contact-details" %>
+  <%= partial "../../layouts/partials/hand-wave" %>
 </header>

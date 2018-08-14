@@ -4,7 +4,7 @@ title: TV & Framer
 subtitle: How we build interactive prototypes at YouView
 permalink: tv-and-framer
 ---
-<img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
+<img src="<%= config[:host] %>/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
 
 ## Prototyping for TV
 ----
@@ -14,7 +14,7 @@ Information about user research and prototyping for TV is lacking compared to mo
 It feels like we've tried every prototyping tool under the sun *(R.I.P. Pixate ⚰️)*. Using Axure we'd tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. 
 
 A screenshot of one of my colleague's more complicated prototypes –
-<img src="http://struanfraser.co.uk/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;">
+<img src="<%= config[:host] %>/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;">
 <span class="caption" style="margin-top: -0.2em;">Axure's conditional chaos. And that's a fraction of it.</span>
 
 Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We'd discovered that you could buy a cheap infrared receiver called a [FLIRC](http://www.flirc.tv) and that it could be used to convert infrared input into keyboard input. Perfect.
@@ -31,7 +31,7 @@ That was fairly intimidating but equipped with some decaying programming skills 
 
 We'd stumbled upon [this nifty little example](http://examples.framerjs.com/#event-keyboard-shortcuts.framer) which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn't designed for TV but we persevered. 
 
-<video src="http://struanfraser.co.uk/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
+<video src="<%= config[:host] %>/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
 <span class="caption">Using FLIRC with a YouView TV Guide prototype</span>
 
 A year of learning later and we're finding it's quite hard to get an entire design team – with little knowledge of object oriented programming – to use a tool to do something for which it wasn't designed. Keyboard input creates a whole host of problems, such as repeating input and complicated syntax, so we came up with a *(hopefully)* simpler solution than Framer had previously offered.
@@ -64,5 +64,5 @@ keyboard.onKey(keyboard.enter, doSomething, 0.3)
 
 I've written a more comprehensive guide on how to use the module on Github so if the module sounds like something you'd be interested in, take a look –
 
-<a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"><img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
+<a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"><img src="<%= config[:host] %>/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
 <span class = "caption">Get the Module</span></a>

@@ -78,5 +78,5 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-  config[:host] = "http://struanfraser.co.uk"
+  config[:host] = "https://struanfraser.co.uk"
 end
