@@ -15,9 +15,10 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #FF5656 !default;
+$background-color: hsl(0, 0, 12) !default;
 $brand-color:      hsla(200, 100, 100, 0.99) !default;
 
+$accent-color: #FD6660;
 
 $grey-color:       hsla( 165, 60, 42, 1 ) !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

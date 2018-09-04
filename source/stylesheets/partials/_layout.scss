@@ -1,5 +1,5 @@
 .main {
-  background: linear-gradient(#FF5656, #EC9150);
+  background: linear-gradient(hsl(0, 0, 12), hsl(0, 0, 15));
   position: relative;
   display: block;
   color: white;
@@ -7,20 +7,28 @@
 }
 
 .summary {
-
   margin-bottom: 8em;
   padding: 3em 4em 3em 4em;
   transition: all 0.3s ease-in-out;
-  h2 {
-    margin-bottom: 0;
-  }
   h3 {
     font-weight: 100;
     font-style: italic;
+    position: relative;
+    z-index: 1;
     @include relative-font-size(2);
+    &::before {
+      background-color: hsl(0,0,20);
+      content: "";
+      position: absolute;
+      height: calc(100% - 1.3em);
+      width: 100%;
+      top: 0.6em;
+      left: 0.3em;
+      z-index: -1;
+    }
   }
   &:hover {
-    background-color: rgba(227, 255, 221, 0.2);
+    background-color: hsla(0, 0, 100, 0.2);
     border-radius: 10px;
   }
 }
