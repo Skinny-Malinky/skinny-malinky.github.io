@@ -112,7 +112,7 @@ h1 {
   font-family: $heading-font-family;
   padding-bottom: 0.8em;
   font-weight: 900;
-  @include relative-font-size(5);
+  @include relative-font-size(4.6);
 }
 
 h2,h3,h4,h5,h6 {
@@ -132,6 +132,10 @@ p {
   font-size: 1.4em;
   line-height: $base-line-height*1.1;
   font-weight: 100;
+  margin-bottom: 1.2em;
+}
+
+iframe {
   margin-bottom: 2.1em;
 }
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <%= partial "layouts/partials/head" %>
+  <%= partial "/layouts/partials/head" %>
     <body>
       <%= partial "layouts/partials/min-header" %>
         <div class="main" role="main" id="main">
@@ -10,8 +10,8 @@
                 <h1>
                   <%= current_page.data.title %>
                 </h1>
-                <h2>
-                  <%= current_page.data.subtitle %>
+                <h2 class="byline">
+                  <%= current_page.data.byline %>
                 </h2>
               </div>
               <div class="post-content">

@@ -10,7 +10,7 @@
   margin-bottom: 8em;
   padding: 3em 4em 3em 4em;
   transition: all 0.3s ease-in-out;
-  h3 {
+  h3.byline {
     font-weight: 100;
     font-style: italic;
     position: relative;
@@ -31,6 +31,9 @@
     background-color: hsla(0, 0, 100, 0.2);
     border-radius: 10px;
   }
+  @media(max-width: 580px) {
+    padding: 20px 30px 20px 30px;
+  }
 }
 
 .content-margin {
@@ -40,6 +43,9 @@
 .content-margin > h1 {
   padding-left: 0.8em;
   padding-bottom: 0.5em;
+  @media(max-width: 580px) {
+    padding-left: 30px;
+  }
 }
 
 em {
