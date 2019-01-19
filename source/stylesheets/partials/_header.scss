@@ -4,8 +4,7 @@
  
  .site-header {
     min-width: 100%;
-    /* Mask: */
-    background-image: linear-gradient(-206deg, #007B8E 0%, #007A8D 2%, #00788B 7%, #007588 15%, #005266 100%);
+    background-image: linear-gradient(206deg, #007B8E 0%, #007A8D 2%, #00788B 7%, #007588 30%, #003340 100%);
     border-top: #1f1f1f solid 1em;
     box-sizing: border-box;
     position: relative;
@@ -16,10 +15,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
     padding-bottom: 15%;
-    // @media (max-width: 835px) {
-    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    // }
   }
 
   .intro {
@@ -36,44 +31,47 @@
       list-style: none;
       margin-left: 1.3em;
     }
-    @media (max-width: 1130px) {
+    @media (max-width: 1327px) {
       position: relative;
       width: 89vw;
       clear: both;
     }
   }
   
-  .hover-container {
-    width: 438px;
-    height: 478px;
-    transform: rotateZ(130deg);
-    margin: 0 auto 0 auto;
+  // .hand-mask {
     
-    @media (max-width: 1130px) {
-      transform: rotateZ(-45deg) translateY(3em);
+  // }
+
+  .hover-container {
+    -webkit-clip-path: ellipse(275px 299px at 259px 187px);
+    clip-path: ellipse(275px 299px at 259px 187px);
+    border-left: solid $accent-color 10px;
+    border-radius: 500px;
+    width: 438px;
+    height: 477px;
+    transform: rotateZ(0deg) translateX(200px);
+    margin: 10em auto 0 auto;
+    flex-grow: 2;
+    
+    @media (max-width: 1327px) {
+      transform: rotateZ(-20deg) translateX(10em);
+      border: 0;
+      margin: 0 auto 0 auto;
     }
     @media (max-width: 360px) {
       transform: rotateZ(-38deg) translateY(-2em);
+      border: 0;
     }
-
+    & *{transition: transform 0.3s;}
     &:hover {
-      & > .blue-hand {
-        transform: rotateZ(5deg);
-        transition: transform 0.3s;
-      }
-      & > .green-hand {
-        transform: rotateZ(-5deg);
-        transition: transform 0.3s;
-      }
-    }
-    &:not(:hover) {
-      & > .green-hand {
-        transform: rotateZ(0);
-        transition: transform 0.3s;
+      & > .red-hand {
+        transform: scale(1.07);
       }
       & > .blue-hand {
-        transform: rotateZ(0);
-        transition: transform 0.3s;
+        transform: rotateZ(6deg) scale(1.1);
+      }
+      & > .green-hand {
+        transform: rotateZ(-6deg) scale(1.02);
       }
     }
   }
@@ -120,22 +118,17 @@
       content: "";
       position: absolute;
       height: 90%;
-      width: calc(100% + 3em);
+      width: calc(100% + 1em);
       top: 0.08em;
       left: -0.4em;
       z-index: -1;
     }
-    
     &:visited {
       color: darken(#101245, 3%);
     }
     &:hover {
       color: lighten(#101245, 10%);
       text-decoration: none;
-      transition: 0.3s;
-    }
-    &:not(:hover) {
-      transition: 0.3s;
     }
   }
   

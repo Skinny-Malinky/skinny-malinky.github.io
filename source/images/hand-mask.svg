@@ -1,0 +1,18 @@
+
+<svg width="502px" height="471px" viewBox="0 0 502 471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M81.1716719,0.356485215 C243.995283,48.4762536 335.868292,78.3276037 356.790698,89.9105356 C377.713104,101.493467 379.000558,123.217031 360.653059,155.081226 C310.795224,183.141434 287.387492,203.680491 290.429863,216.698397 C293.991253,231.937124 292.440691,245.833031 285.778176,258.386119 C270.267366,282.0503 247.607805,290.556825 217.79949,283.905692 C205.889148,281.248136 193.542638,277.236512 180.75996,271.870819 L106.415525,315.461973 L0.839197701,247.594418 L81.1716719,0.356485215 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="red" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-333.000000, 80.000000)">
+            <g id="Circle-Haund" transform="translate(584.000000, 155.500000) rotate(-7.000000) translate(-584.000000, -155.500000) translate(357.000000, -53.000000)">
+                <g id="Haunds-Option-2" transform="translate(226.672254, 208.247070) scale(-1, 1) rotate(-18.000000) translate(-226.672254, -208.247070) translate(39.672254, 50.247070)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" opacity="1"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
