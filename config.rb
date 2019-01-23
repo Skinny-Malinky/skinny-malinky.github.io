@@ -70,12 +70,12 @@ activate :syntax, :line_numbers => true
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :trailing_slash, false
+set :build_dir, '../Skinny-Malinky.github.io'
 # activate :asset_host, :host => 'http://struanfraser.co.uk'
 
 configure :build do
   # Minify CSS on build
   activate :minify_css
-
   # Minify Javascript on build
   activate :minify_javascript
   config[:host] = "https://struanfraser.co.uk"
