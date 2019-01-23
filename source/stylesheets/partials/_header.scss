@@ -161,10 +161,13 @@
   .bio {
     color: #E4F0EE;
     margin-top: 1.7em;
-    font-size: 1.7em;
-    font-weight: 300;
     display: inline-block;
-    word-spacing: 0.1rem;
+    p {
+      font-size: 1.7em;
+      font-weight: 300;
+      word-spacing: 0.1rem;
+      margin-bottom: 0.5em;
+    }
   }
   
   .note {
