@@ -24,8 +24,6 @@ body {
   font-kerning: normal;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -36,8 +34,6 @@ ul, ol, dl, figure,
   margin-bottom: 30px / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -45,8 +41,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -58,8 +52,6 @@ figure > img {
 figcaption {
   font-size: 0.8em;
 }
-
-
 
 /**
  * Lists
@@ -74,8 +66,6 @@ li {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Headings
@@ -121,12 +111,12 @@ h2 {
   font-size: 3.2em;
 }
 
-// p {
-//   font-size: 1.4em;
-//   line-height: 1.65;
-//   font-weight: 100;
-//   margin-bottom: 1.2em;
-// }
+p {
+  font-size: 1.4em;
+  line-height: 1.65;
+  font-weight: 100;
+  margin-bottom: 1.2em;
+}
 
 iframe {
   margin-bottom: 2.1em;
@@ -153,86 +143,5 @@ blockquote {
     font-style: italic;
     text-transform: uppercase;
     margin-top: 0;
-  }
-}
-
-
-
-/**
- * Code formatting
- */
-// pre,
-// code {
-//   font-size: 0.8em;
-//   border-radius: 3px;
-//   background-color: hsla(0, 10, 1, 0.5);
-//   width: 100%;
-// }
-
-// code {
-//   padding: 1em;
-// }
-
-// pre {
-//   padding: 8px 12px;
-//   overflow-x: auto;
-
-//   > code {
-//     border: 0;
-//     padding-right: 0;
-//     padding-left: 0;
-//   }
-// }
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
-
-
-/**
- * Tables
- */
-table {
-  margin-bottom: 30px;
-  width: 100%;
-  text-align: $table-text-align;
-  border-collapse: collapse;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: (30px / 3) (30px / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
   }
 }

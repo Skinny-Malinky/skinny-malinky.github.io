@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # For faster file watcher updates on Windows:
-gem 'wdm', platforms: [:x64_mingw]
+gem 'wdm', :platform => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem 'tzinfo-data'

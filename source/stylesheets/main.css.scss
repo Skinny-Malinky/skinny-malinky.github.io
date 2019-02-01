@@ -16,22 +16,9 @@ $grey-color:       hsla( 165, 60, 42, 1 ) !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$table-text-align: left !default;
-
-// Width of the content area
-$content-width:    800px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
+@import "partials/_header.scss";
 
 // Import partials.
-@import "partials/_header.scss";
 @import "partials/_debug.scss";
 @import "partials/_base.scss";
 @import "partials/_layout.scss";

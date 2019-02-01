@@ -71,13 +71,15 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :trailing_slash, false
 set :build_dir, '../Skinny-Malinky.github.io'
+set :sass_source_maps, true
+set :sass, :output_style => "nested"
+
 # activate :asset_host, :host => 'http://struanfraser.co.uk'
 
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
   # Minify Javascript on build
-  activate :minify_javascript
-  set :sass_source_maps, true
   config[:host] = "https://struanfraser.co.uk"
+  activate :minify_css
+  activate :minify_javascript
 end
