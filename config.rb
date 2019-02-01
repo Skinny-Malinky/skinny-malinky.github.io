@@ -75,8 +75,9 @@ set :build_dir, '../Skinny-Malinky.github.io'
 
 configure :build do
   # Minify CSS on build
-  activate :minify_css
+  # activate :minify_css
   # Minify Javascript on build
   activate :minify_javascript
+  set :sass_source_maps, true
   config[:host] = "https://struanfraser.co.uk"
 end

@@ -7,18 +7,10 @@
 $body-font-family: 'Spectral', 'Times New Roman', Times, serif;
 $base-font-family: "Spectral", Helvetica, Arial, sans-serif !default;
 $heading-font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
-$base-font-size:   16px !default;
-$base-font-weight: 300 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
-
-$text-color:       #111 !default;
 $background-color: hsl(0, 0, 12) !default;
-$brand-color:      hsla(200, 100, 100, 0.99) !default;
-
-$accent-color: #FD6660;
+$brand-color:      hsl(200, 100, 100) !default;
+$accent-color:     #FD6660;
 
 $grey-color:       hsla( 165, 60, 42, 1 ) !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -32,28 +24,17 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
-
 // Import partials.
+@import "partials/_header.scss";
 @import "partials/_debug.scss";
 @import "partials/_base.scss";
 @import "partials/_layout.scss";
-@import "partials/_header.scss";
 @import "partials/_posts.scss";
 // @import "partials/_highlighting.css";
 @import "partials/_syntax-highlighting.scss";

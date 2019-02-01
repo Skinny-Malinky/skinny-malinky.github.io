@@ -9,14 +9,12 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  font: 300 16px/1.5 $base-font-family;
+  color: white;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -35,7 +33,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: 30px / 2;
 }
 
 
@@ -58,7 +56,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: 0.8em;
 }
 
 
@@ -67,7 +65,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 30px;
 }
 
 li {
@@ -83,7 +81,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 300;
 }
 
 /**
@@ -112,7 +110,7 @@ h1 {
   font-family: $heading-font-family;
   padding-bottom: 0.8em;
   font-weight: 900;
-  @include relative-font-size(4.6);
+  font-size: 4.6rem;
 }
 
 h2,h3,h4,h5,h6 {
@@ -123,25 +121,15 @@ h2 {
   font-size: 3.2em;
 }
 
-h3 {
-  @include relative-font-size(2);
-  font-weight: 300;
-}
-
-p {
-  font-size: 1.4em;
-  line-height: $base-line-height*1.1;
-  font-weight: 100;
-  margin-bottom: 1.2em;
-}
+// p {
+//   font-size: 1.4em;
+//   line-height: 1.65;
+//   font-weight: 100;
+//   margin-bottom: 1.2em;
+// }
 
 iframe {
   margin-bottom: 2.1em;
-}
-
-body {
-  min-width: 100;
-  font: $base-font-size;
 }
 
 hr { 
@@ -157,7 +145,7 @@ hr {
 blockquote {
   color: 'white';
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit;
+  padding-left: 30px;
   & > p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7em;
@@ -232,7 +220,7 @@ blockquote {
  * Tables
  */
 table {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 30px;
   width: 100%;
   text-align: $table-text-align;
   border-collapse: collapse;
@@ -242,7 +230,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: (30px / 3) (30px / 2);
   }
   th {
     background-color: lighten($grey-color-light, 3%);

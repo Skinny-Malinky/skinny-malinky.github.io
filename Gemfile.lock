@@ -123,13 +123,13 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  builder (~> 3.0)
-  middleman (~> 4.1)
+  builder
+  middleman
   middleman-blog
   middleman-livereload
   middleman-syntax
   nokogiri
-  redcarpet (~> 3.3, >= 3.3.3)
+  redcarpet
   tzinfo-data
   wdm
 

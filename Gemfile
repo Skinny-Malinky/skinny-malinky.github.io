@@ -3,20 +3,19 @@
 source 'https://rubygems.org'
 
 # For faster file watcher updates on Windows:
-gem 'wdm'
+gem 'wdm', platforms: [:x64_mingw]
 
 # Windows does not come with time zone data
 gem 'tzinfo-data'
 
 # Middleman Gems
-gem "middleman", "~> 4.1"
+gem "middleman"
 gem "middleman-blog"
 gem "middleman-livereload"
+gem "middleman-syntax"
 
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet'
 gem 'nokogiri'
 
 # For feed.xml.builder
-gem "builder", "~> 3.0"
-
-gem "middleman-syntax"
+gem "builder"
