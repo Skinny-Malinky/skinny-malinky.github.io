@@ -1,8 +1,13 @@
 --- 
-layout: portfolio 
+layout: front-page 
 pageable: true 
 per_page: 10 
 ---
+<% def sub_pages(dir)
+  sitemap.resources.select do |resource|
+    resource.path.start_with?(dir)
+  end
+end %>
 <% if paginate && num_pages > 1 %>
   <p>Page
     <%= page_number %> of
@@ -16,6 +21,7 @@ per_page: 10
   <% end %>
   <% end %>
         <% blog.articles.each do |article, i| %>
+        <%# <% sub_pages("portfolio").each do |article, i| %> %>
         <% article.data.tags.each do |tag, j| %>
         <% if tag == "portfolio"%>
         <div id="clean-text">

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <%= partial "layouts/partials/head" %>
+    <body>
+      <%= partial "layouts/partials/full-header" %>
+
+        <div class="main" role="main">
+          <div class="content-container">
+            <div class="content-margin">
+              <h1>Portfolio</h1>
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+          window.sr = ScrollReveal();
+          sr.reveal('.summary', {
+            scale: 1
+          });
+        </script>
+    </body>
+
+</html>
