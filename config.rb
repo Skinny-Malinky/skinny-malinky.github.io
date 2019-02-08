@@ -82,4 +82,12 @@ configure :build do
   config[:host] = "https://struanfraser.co.uk"
   activate :minify_css
   activate :minify_javascript
+  ignore 'ignore/*'
+end
+# After build hooks
+after_build do |builder|
+  print "After_build fixes... "
+  system("cp -R source/ignore/. #{config[:build_dir]}")
+  print config[:build_dir]
+  puts "done."
 end
