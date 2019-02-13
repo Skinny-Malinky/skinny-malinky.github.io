@@ -7,20 +7,26 @@ byline: How can we make TV easier to find without compromising an evening's view
 publishToBlog: false
 published: false
 permalink: youview-guide
+layout: portfolio-post
+hero_extension: /blog/posts/2019/images/youview-guide/youview-guide.jpg
+hero_alt: YouView's TV Guide showing a range of programmes from UK broadcasters.
+year: 2015 - 2019
+org: YouView
+intro: Creating a TV Guide is a risky challenge as people's behaviours have been learned over years and the paradigm has been well accepted for some time.
 
 ---
 <figure>
-<img src="<%= config[:host] %>/blog/posts/2019/images/youview-guide/youview-guide.jpg" alt="YouView's TV Guide showing a range of programmes from UK broadcasters."></img>
+<img src="<%= config[:host] %><%= current_page.data.hero_extension %>" alt="<%= current_page.data.hero_alt %>"></img>
 </figure>
 ## Making a guide we recognise
-Creating a TV Guide is a risky challenge as people's behaviours have been learned over years and the paradigm has been well accepted for some time. Many products that have launched without a traditional Guide have found that they had to add one in a later release i.e. <a href="https://techcrunch.com/2018/06/13/plex-adds-a-traditional-grid-programming-guide-to-its-tv-service/">Plex</a> and <a href="https://www.theverge.com/2018/5/9/17336158/hulu-live-tv-guide-channel-surfing-app-update">Hulu</a>.
+<%= current_page.data.intro %> Many products that have launched without a traditional Guide have found that they had to add one in a later release i.e. <a href="https://techcrunch.com/2018/06/13/plex-adds-a-traditional-grid-programming-guide-to-its-tv-service/">Plex</a> and <a href="https://www.theverge.com/2018/5/9/17336158/hulu-live-tv-guide-channel-surfing-app-update">Hulu</a>.
 
 <figure>
 <video src="<%= config[:host] %>/blog/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
 </figure>
 <figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption>
 
-With those deeply ingrained behaviours from a diverse group of users with mixed abilities, we have to be sensitive to making whole-scale changes. 
+With those deeply ingrained behaviours from a diverse group of users with mixed abilities, we have to be sensitive to making whole-scale changes.
 
 We needed to have a great deal of confidence when we conceived of the Next Generation Guide that it would feel comfortable and that people still felt like they understood how to use it. At the time, it felt like we didn't have much choice but to build the product as pictures weren't evocative enough to gain meaningful insights as to whether the Guide was still comprehensible to our users. To resolve this I tried a whole host of tools, the most powerful of which, I found was Framer. 
 

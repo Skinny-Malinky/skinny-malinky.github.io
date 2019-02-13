@@ -1,6 +1,16 @@
+# redirect "/my/old/path.html", to: "/my/new/path.html"
 ###
 # Page options, layouts, aliases and proxies
 ###
+
+# Methods defined in the helpers block are available in templates
+helpers do
+  def sub_pages(dir)
+    sitemap.resources.select do |resource|
+      resource.path.start_with?(dir)
+    end
+  end
+end
 
 # Per-page layout changes:
 #
@@ -54,13 +64,6 @@ configure :development do
 end
 
 Time.zone = "London"
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 # Build-specific configuration
 
