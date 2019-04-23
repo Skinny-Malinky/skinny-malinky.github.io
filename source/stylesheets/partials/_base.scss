@@ -22,6 +22,9 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  font-smooth: always;
+  -webkit-font-smoothing: always;
+  -moz-osx-font-smoothing: auto;
 }
 
 /**

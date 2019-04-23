@@ -86,6 +86,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   ignore 'ignore/*'
+  ignore 'unused-assets/*'
 end
 # After build hooks
 after_build do |builder|

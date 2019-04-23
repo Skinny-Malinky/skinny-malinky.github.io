@@ -2,27 +2,30 @@
 layout: portfolio 
 ---
   <% sub_pages('portfolio/').reverse.each do |article| %>
-  <div id="clean-text">
-  <% link_to article.path, :fragment => 'main' do %>
-  <div class="summary">
-    <h2>
-      <%= article.data.title %>
-    </h2>
-    <h3 class="byline">
-      <%= article.data.byline %>
-    </h3>
-    <article>
-    <figure>
-    <img src="<%= config[:host] %><%= article.data.hero_extension %>" alt="<%= article.data.hero_alt %>"></img>
-    </figure>
-    <p><%= article.data.intro %>..</p>
-    </article>
-    <span class="post-meta">
-    <hr />
-    <em><%= article.data.org %></em> <%= article.data.year %> 
-    </span>
-    
-  </div>
-  <% end %>
-  </div>
-  <% end %>
+  <% if article.data.title != "" %>
+  <% puts article.data.title %>
+    <div id="clean-text">
+    <% link_to article.path, :fragment => 'main' do %>
+    <div class="summary">
+      <h2>
+        <%= article.data.title %>
+      </h2>
+      <h3 class="byline">
+        <%= article.data.byline %>
+      </h3>
+      <article>
+      <figure>
+      <img src="<%= config[:host] %><%= article.data.hero_extension %>" alt="<%= article.data.hero_alt %>"></img>
+      </figure>
+      <p><%= article.data.intro %>..</p>
+      </article>
+      <span class="post-meta">
+      <hr />
+      <em><%= article.data.org %></em> <%= article.data.year %> 
+      </span>
+      
+    </div>
+    <% end %>
+    </div>
+    <% end %>
+    <% end %>
