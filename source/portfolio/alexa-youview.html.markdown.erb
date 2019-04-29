@@ -2,16 +2,55 @@
 
 title: TV & Voice
 tags: ["portfolio"]
-byline: How can we create stronger connections between food growers and urban citizens?
+byline: What's the quickest way to get to TV using a smart assistant?
 publish_to_blog: false
 published: false
 layout: portfolio-post
 hero_extension: /images/alexa.jpg
-hero_alt: A wooden totem is shown with a series of buttons set in hessian. The buttons circulate the central column and have labels laser cut into them. The labels indicate different types of British grown foods.
-year: 2015-2018
+hero_alt: A YouView set top box is shown next to an Amazon Echo.
+year: 2015-2019
 org: YouView
-intro: Voice interfaces
+intro: YouView announced it would be developing an Alexa app in June 2017. During the development of the Alexa app, we helped research, test and design the new product offering. 
 ---
 <figure>
 <img src="<%= config[:host] %><%= current_page.data.hero_extension %>" alt="<%= current_page.data.hero_alt %>"></img>
 </figure>
+
+[YouView announced it would be developing an Alexa app in June 2017](https://www.youview.com/2017/06/08/youview-developing-voice-controlled-tv-experience-amazon-alexa/). During the development of the Alexa app, we helped research, test and design the new product offering. 
+
+Designing for voice is a challenge when you're used to designing for graphical interfaces. Fortunately it seems the principles of design can be applied to most problems.
+
+We were also blessed with other companies having broken this ground first meaning we had a wealth of information to draw from already. TiVo already had a voice offering in America and Sony TVs had Google's voice assistant built in. This meant we could already try a lot of stuff out before even beginning development and when you work in a TV company, it's quite easy to find people who are already using these technologies. 
+
+Typically what we were finding was that people often don't know what they can do with their voice assistant. We were also finding that many commands were not being correctly recognised when being searched for.
+
+After doing a lot of desk research, I came to the conclusion that voice assistants are at their most powerful when used in conjunction with other things. They can make journeys to content much shorter and begin to remove unnecessary layers of graphical interface. 
+
+That being said, voice assistants can't read minds and we still need a certain element of choice. When reading about voice, the word "multi-modality" kept coming up. Researchers kept impressing the importance of complementary technologies such as remote controls.
+
+This was starting to sound like a hard thing to prototype for as there are so many moving parts. 
+
+To test it out, I set up a prototype using the TV toolkit that I'd built. It plugged directly into our Search backend but was incapable of recognising voice. So to replicate this, I acted as the computer and simulated actions for people who were submitting commands. 
+
+This was fun and we learned a lot from it. We learned that the search results were sometimes exclusive and would miss out results if people didn't say the programme name correctly. We found that people were generally swapping between the remote and voice pretty freely.
+
+When we started to prototype it for real, it became clear that the assistant didn't have quite as good listening skills as I did. People would say something like "play Samson" and it would play The Simpsons. So we started to experiment with other ways of selecting that didn't require perfect hearing. We experimented with numerical selection, navigational selection and even image based properties like colour.
+
+It's been a great project and I look forward to it releasing soon. To hold you over in the meantime, I've posted a bunch of links that I used below. 
+
+
+<h2 id="references">A bunch of stuff I'd recommend reading/watching</h2>
+----
+[Design for voice interfaces - O’Reilly Media](https://www.oreilly.com/ideas/design-for-voice-interfaces)<br>
+[How to Design Voice User Interfaces - Interaction Design Foundation](https://www.interaction-design.org/literature/article/how-to-design-voice-user-interfaces)<br>
+[10 Best Practices when Designing for Voice - Opearlo](http://www.opearlo.com/blog/10-best-practices-when-designing-for-voice)<br>
+[Designing for voice differs from traditional UX - TechCrunch](https://techcrunch.com/2016/08/21/designing-for-voice-differs-from-traditional-ux/)<br>
+[A newsletter about voice from Abi Jones](http://locutius.tumblr.com/)<br>
+[BBC blog about their 'Talking With Machines' project](http://www.bbc.co.uk/rd/blog/2016-11-voice-user-interface-ui)<br>
+[BBCs methodology for prototyping with voice](https://www.bbc.co.uk/rd/blog/2017-06-voice-ui-user-interface-children-drama)<br>
+[Six principles for designing voice interfaces - Creative Review](https://www.creativereview.co.uk/six-principles-designing-voice-interfaces/)<br>
+[Conversation Design: Speaking the Same Language - Google Design](https://design.google/library/conversation-design-speaking-same-language/)
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/86392147?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<iframe width="100%" height="400px" src="https://www.youtube-nocookie.com/embed/Ad15O3ggowQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
