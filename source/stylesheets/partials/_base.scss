@@ -61,8 +61,12 @@ figcaption {
  */
 ul, ol {
   margin-left: 30px;
+  line-height: 2em;
+  font-size: 1.4em;
 }
-
+ul {
+  list-style-type: square;
+}
 li {
   > ul,
   > ol {

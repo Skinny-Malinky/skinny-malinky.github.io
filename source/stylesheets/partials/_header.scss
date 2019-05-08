@@ -61,6 +61,10 @@
     border: 0;
     margin: 0 auto 0 auto;
   }
+  @media (max-width: 829px) {
+    transform: translateX(17%) translateY(10%) rotateZ(-20deg);
+    border: 0;
+  }
   @media (max-width: 360px) {
     transform: rotateZ(-38deg) translateY(-2em);
     border: 0;
