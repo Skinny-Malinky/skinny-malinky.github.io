@@ -23,11 +23,13 @@ article {
   }
   h2 {
     margin-top: 2em;
-    font-size: 2.2rem;
+    // font-size: 2.6em;
     font-weight: 400;
+    margin-top: 1.5em;
   }
   h3 {
-    font-size: 2rem;
+    margin-top: 1.5em;
+    font-size: 1.6em;
   }
   a {
     font-weight: 400;
@@ -51,7 +53,7 @@ figure ~ p {
 
 .content-container {
     max-width: 79ch;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 4em auto;
     padding-top: 10em;
   }
 
@@ -82,11 +84,6 @@ figure ~ p {
     margin-bottom: 1em;
   }
 }
-
-.post-content {
-  padding-bottom: 5em;
-}
-
 .post-meta {
     font-size: 1.2em;
     font-family: $heading-font-family;
