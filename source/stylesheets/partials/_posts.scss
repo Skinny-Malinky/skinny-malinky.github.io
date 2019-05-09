@@ -50,7 +50,7 @@ figure ~ p {
 }
 
 .content-container {
-    max-width: 100ch;
+    max-width: 79ch;
     margin: 0 auto 0 auto;
     padding-top: 10em;
   }
@@ -61,12 +61,13 @@ figure ~ p {
     margin-bottom: 0;
     position: relative;
     display: inline-block;
+    line-height: 1.3em;
     z-index: 1;
     &::before {
       background-color: hsl(0,0,20);
       content: "";
       position: absolute;
-      height: calc(100% - 0.6em);
+      height: calc(100% - 0.5em);
       width: 100%;
       top: 0.6em;
       left: 0.3em;
@@ -87,7 +88,7 @@ figure ~ p {
 }
 
 .post-meta {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: $heading-font-family;
     font-weight: 300;
     display: block;
