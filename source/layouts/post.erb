@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <%= partial "/layouts/partials/head" %>
+  <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title}) %>
     <body>
       <%= partial "layouts/partials/min-header" %>
         <div class="main" role="main" id="main">
