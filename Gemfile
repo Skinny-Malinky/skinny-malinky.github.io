@@ -15,7 +15,7 @@ gem "middleman-livereload"
 gem "middleman-syntax"
 
 gem 'redcarpet'
-gem 'nokogiri'
+gem "nokogiri", ">= 1.10.4"
 
 # For feed.xml.builder
 gem "builder"
