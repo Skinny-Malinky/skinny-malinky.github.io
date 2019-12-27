@@ -1,0 +1,28 @@
+.back-to-top {
+    width: 4em;
+    margin: 3em auto 3em auto;
+    border: solid 0.05em white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(253, 102, 96, 0);
+    transition: all 0.3s ease-out;
+    &:before {
+        content: "↑";
+        font-size: 2em;
+        font-weight: 800;
+        height: 1.3em;
+        margin-left: 1px;
+        margin-top: 0.4rem;
+    }
+    &:hover {
+        background-color: rgba(253, 102, 96, 1);
+        text-decoration: none;
+        transform: translateY(-5px);
+    }
+    &:focus {
+        background-color: rgb(165, 70, 66);
+    }
+}

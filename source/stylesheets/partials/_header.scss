@@ -133,6 +133,7 @@
   &:hover {
     color: lighten(#101245, 10%);
     text-decoration: none;
+    transform: rotate(-2deg) translateY(-5px);
   }
 }
 
