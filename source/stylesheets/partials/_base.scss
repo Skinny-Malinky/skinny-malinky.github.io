@@ -154,6 +154,21 @@ blockquote {
     margin-top: 0;
   }
 }
+q {
+    font-family: 'Montserrat', sans-serif;
+    quotes: "“" "”" "‘" "’";
+    font-size: 1em;
+    font-style: italic;
+    & :before {
+      content: open-quote;
+      align-self: flex-start;
+    }
+    & :after {
+      content: close-quote;
+      align-self: flex-end;
+    }
+}
+
 .highlight {
   margin-top: 1em;
 }
