@@ -49,16 +49,15 @@
   width: 438px;
   height: 477px;
   transform: rotateZ(0deg) translateX(200px);
-  margin: 10em auto 0 auto;
-  flex-grow: 2;
+  margin-top: 10em;
 
   @media (max-width: 1327px) {
-    transform: rotateZ(-20deg) translateX(10em);
+    transform: rotateZ(-20deg) translateY(7rem);
     border: 0;
     margin: 0 auto 0 auto;
   }
   @media (max-width: 829px) {
-    transform: translateX(17%) translateY(10%) rotateZ(-20deg);
+    transform: translateX(1rem) translateY(2rem) rotateZ(-20deg);
     border: 0;
   }
   @media (max-width: 360px) {
@@ -196,8 +195,5 @@
   li {
     margin-left: 1.3em;
     font-size: 1.2em;
-  }
-  li:first-child{
-    margin-left:0;
   }
 }
