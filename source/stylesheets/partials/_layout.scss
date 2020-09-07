@@ -3,7 +3,6 @@
   position: relative;
   display: block;
   color: white;
-  overflow:hidden;
 }
 
 .summary {
@@ -33,6 +32,18 @@
   }
   @media(max-width: 580px) {
     padding: 20px 30px 20px 30px;
+  }
+}
+
+.split {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  transform: translateX(-10%);
+  width: 140%;
+  > * {
+    width: 120%;
+    padding: 0 1em;
   }
 }
 

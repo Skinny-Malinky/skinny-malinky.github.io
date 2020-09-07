@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title}) %>
+    <body>
+        <div class="main" role="main">
+            <div class="content-container">
+                <div class="content-margin">
+                    <%= yield %>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

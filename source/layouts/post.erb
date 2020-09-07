@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title}) %>
+  <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title + "\ \|\ Struan\'s\ blog"}) %>
     <body>
       <%= partial "layouts/partials/min-header" %>
         <div class="main" role="main" id="main">
@@ -21,6 +21,7 @@
                 <span class="post-meta">
                   Published <em><%= current_page.date.strftime('%e %B %Y') %></em>
                 </span>
+                <a href="#top" class="back-to-top"></a>
             </div>
           </div>
         </div>
