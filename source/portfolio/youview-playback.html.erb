@@ -1,0 +1,180 @@
+---
+title: YouView Playback
+date: 2019-02-06 22:05 GMT
+tags: ["portfolio"]
+byline: How do we enrich the TV viewing experience without obscuring TV?
+publish_to_blog: false
+published: false
+layout: portfolio-post
+hero_extension: /blog/posts/2019/images/watch-youview/watch-youview.jpg
+hero_alt: YouView's playback bar is overlaid an episode of Inside Number Nine. The next episode is shown to the write and a patch indicates that the content is currently playing.
+year: 2015 - 2019
+org: YouView
+intro: Playback is the core of the YouView experience and we aim to get people to playback content as quickly as possible.
+---
+
+<figure>
+<img src="<%= config[:host] %><%= current_page.data.hero_extension %>" alt="<%= current_page.data.hero_alt %>"></img>
+</figure>
+
+<p>
+How do we enrich the TV viewing experience through contextual information without obscuring the programme?
+</p> 
+<p>
+I joined YouView at the start of the creation of its new next-generation set-top-box software. As a design team we had to design a new system that was robust, flexible, familiar and contemporary. 
+</p>
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5528bd79-48d8-4e58-9d01-09926547aba3/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5528bd79-48d8-4e58-9d01-09926547aba3/Untitled.png)
+<p>
+Before we start, here's a few terms you'll need to know:
+</p>
+<ul>
+<li>Trickplay: Rewinding, fast-forwarding, pausing and skipping while watching a programme</li>
+<li>
+Playback bar: The bar that appears on the screen to show you information about the currently playing programme (pictured above)
+</li>
+</ul>
+<p>
+Playback is the core of the set-top box experience and we aimed to allow people to watch programmes as quickly as possible. Live TV is the first thing you see when you switch on the set-top box so it's important that navigating from there is clear and comprehensible. Playback should obscure the video feed as little as possible while offering clear affordances for trickplay options when they are available.
+</p>
+<h3>My role</h3>
+<p>
+At YouView we all participated in designing the whole system but each member of the design team was asked to lead within different clusters. When I was appointed to the playback bar, I was responsible for programme restart, the secondary title, end of playback, play next episode and d-pad trickplay. As a part of this role, I sat in on all of the cluster meetings to help us negotiate a position from the perspective of different kinds of user. Doing this has helped me develop a much stronger intuition for how to break down and deliver features and know when they're ready for release. 
+</p>
+<h3>Trickplay</h3>
+<p>
+Our process varied between projects depending on the needs of the subject. In order to demonstrate some of the steps we took in one particular case, I'm going to summarise the process of designing trickplay within the playback bar. As the design process is always a little messy and non-linear, I won't tell the whole story but if you want to know more, feel free to get in touch. [[mailto link]]
+</p>
+<h3>
+Old feature
+</h3>
+<p>
+When we launched YouView's next generation software, we didn't have all of the features that were in the old software. We previously had a feature where you could type in the specific time to which you have watched. The time had to be typed in before watching the recording. When people tried it we found that after making a mistake, navigating to course correct could take a lot of time. It was clear that we needed to afford the ability to jump through the programme while watching a recording. This feature was limited to recordings but we sought to find a way to navigate through a programme whether it's live, recorded or on demand in order to create a more coherent, learnable means of navigation.
+</p>
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2f39cff9-5de5-4774-aa5c-7c4681dcdc8b/myview.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2f39cff9-5de5-4774-aa5c-7c4681dcdc8b/myview.jpg)
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9bb8c777-7654-4997-bda4-3e30197c64ad/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9bb8c777-7654-4997-bda4-3e30197c64ad/Untitled.png)
+<h3>
+Wimbledon
+</h3>
+<p>
+We noticed that there were many more requests for the old feature when sports events were on because people had long recordings that were unwieldy to navigate using fast forward alone. Even at 64x the speed, it took a long time to navigate through six hours of broadcasting which was corroborated in interviews. This became a fairly reliable use case that we could test the product against and a criteria through which we could recruit users.
+</p>
+<h3>
+Previous research
+</h3>
+<p>
+When we first started building the next-generation software, I had a chance to sit-in on usability testing of the playback bar prototypes. Another member of my team was leading UX in the cluster at the time. We'd designed research featuring a series of tasks we could analyse. The research was conducted by an external agency which we sat in on. 
+</p>
+<p>
+We'd learned some key things that were relevant to trickplay. People usually use the video feed instead of the playhead to figure out where they are in a programme. This means feedback around the playhead – the active element – is unlikely to be seen. We rely on the events and images of the programme to orient ourselves in time. For example, we're much more likely to remember "Ashleigh lost her watch" than "I was 8 minutes into the programme". We were relying on people remembering where they were rather than recognising the scene they were on.
+</p>
+image of playhead
+<p>
+Remote controls famously have an unwieldy number of buttons. When trying to navigate through a programme, people would often try and use the d-pad rather than the dedicated fast forward or rewind buttons. The number of buttons made task completion take longer than expected when considering [Hick's Law](https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users). We aimed to make navigation possible using the d-pad and the context of the interface at that moment in time. This wasn't <em>always</em> possible for many reasons but that's a longer, different story.
+</p>
+<h3>Early concepts</h3>
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f0ac5ca9-d6c7-4aaa-b57f-f56c71c9bf77/Screenshot_2020-10-08_at_20.38.28.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f0ac5ca9-d6c7-4aaa-b57f-f56c71c9bf77/Screenshot_2020-10-08_at_20.38.28.png)
+
+<figcaption>
+A small selection of concepts
+</figcaption>
+<p>
+Having spoken to some of the users who were loudly asking for this feature, we were able to figure out some primary use cases. One was trying to navigate very long sports programmes and the other was that the progress in the programme had been lost or watched somewhere else.
+</p>
+<p>
+As I'm telling this in retrospect. I hadn't collated all of this information by the time I'd started concepting so you'll see some of the ideas I had to work through before fully understanding the problem.
+</p>
+<p>
+One of the first concepts that appeared came from one of our developers who had built a concept that we could go forward with. It worked but it had no affordances to signal how to use it. Unfortunately they didn't have time to help me flesh out this idea further so I decided to develop a prototype framework myself. 
+</p>
+<p>
+Here is a recreation of that prototype. This was made using Framer Classic and all of the following prototypes are drafts designed to evoke a reaction, not to be a final design comp. They also tend to be a little glitchy but working perfectly is not the point. When testing it, we use a [[FLIRC controller]] to convert remote control input into keyboard input. In the prototype, type a number in whole minutes that is less than the duration of the film.
+</p>
+
+<p>
+Controls: 
+</p>
+<ul>
+  <li>. - Fast forward</li>
+  <li>, - Rewind (Unfortunately, a standards update means this only works in some browsers)</li>
+  <li>0-9 - Number input</li>
+  <li>Enter - OK</li>
+</ul>
+
+struanfraser.co.uk/prototypes/whole-minutes
+<p>
+After putting this in front of people, I noticed that they would pause to think about where they were in the programme before comitting to pressing a button. Here are some of the things people were saying when I asked what people were thinking:
+</p>
+<ul>
+  <li>Well I was about half way through, so I was looking at how long the programme was (30 minutes) and typing 15</li>
+  <li>I was changing an hour and 23 minutes into whole minutes which takes a second to work out</li>
+</ul>
+<ul>
+People were also typing in several numbers because they were looking for a particular scene. When asked, it went a bit like this:
+  <li>*Types in 45*</li>
+  <li>Ah I haven't seen this bit yet, I need to go back</li>
+  <li>*Types in 30*</li>
+  <li>Okay, I've seen this</li>
+  <li>*Presses fast forward until they've found the point they've watched to*</li>
+</ul>
+<p>
+One of the first things I chose to tackle was the changing from hours to minutes. I tried to create a prototype that figured out whether you were typing in hours or minutes based on the event and the number of digits you type. For long events this is important because three hours and 12 minutes can be difficult to translate to whole minutes. The reaction was similar to the previous prototype and people seemed to understand it but I still wasn't happy with it.
+</p>
+**Link to prototype here**
+<p>
+From these tests I was starting to think that what we were doing was essentially building a bookmark tool but without the bookmark. You have to remember the time you've progressed through a programme: this could be handled by the system. To me this was a signal that the model was wrong and we were relying on recall rather than recognition. If people were going back and forth in the programme, you shouldn't have to press several buttons to quickly scan through it.
+</p>
+<h3>Getting closer</h3>
+<p>
+Our ambition was to use the d-pad to navigate the system but we already had lateral movement in the playback bar as that's how you navigate to the next episode.
+</p>
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/17f03e7b-39f6-4831-b4b8-bf0fba24c832/next-episode.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/17f03e7b-39f6-4831-b4b8-bf0fba24c832/next-episode.png)
+<p>
+For the time being, we couldn't use the d-pad for fast forward and rewind. However the playback bar has several states. When using trickplay the next episode is no longer available. I wanted to create some kind of affordance that showed you can jump longer distances once you're in a trickplay state.
+</p>
+<p>
+I decided that we should only show the affordance for a long jump once fast-forward is used as that shows an intention to navigate the programme. 
+</p>
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a487ca9-0a42-43c4-a6de-de8b03b46fe5/Screenshot_2020-10-09_at_02.35.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a487ca9-0a42-43c4-a6de-de8b03b46fe5/Screenshot_2020-10-09_at_02.35.55.png)
+
+<h3>Rapid iterative testing</h3>
+<p>
+During the testing of the playback bar, I helped introduce [Rapid Iterative Testing and Evaluation (RITE)](https://uxmag.com/articles/the-rite-way-to-prototype) which was not previously possible. Having a high fidelity prototyping framework meant we could respond to feedback much more quickly. The research was designed to ask people to find a specific scene in a programme. We tested with 3 popular programmes: Planet Earth, Strictly Come Dancing and The Apprentice. For each we asked them to find: Planet Earth's behind the scenes section, the scoring for Strictly and the boardroom section of The Apprentice. They could choose the programme they were most familiar with.
+</p>
+<p>
+This allowed us to determine if the association of visual affordances to functionality was clear and that people could orient themself within a programme. I made many small changes during these sessions. These included: 
+</p>
+<ul>
+  <li>Animating the playhead made the movement in time clearerÎ</li>
+  <li>Changing the video feed at the end of the playhead animation to associate the animation with the time change</li>
+  <li>Animating the selected number to jump-to</li>
+</ul>
+<p>
+This was extremely successful and the feedback was invaluable in making small improvements that made the micro-interactions feel tighter and more direct.
+</p>
+<p>
+You can try the prototype that came out of this session here.
+
+**[[PROTOTYPE HERE WITH INSTRUCTIONS]]**
+</p>
+<h3>Documentation</h3>
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ce0c2cf-1b01-46a4-9347-5b3dc501cc5a/documentation-small.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ce0c2cf-1b01-46a4-9347-5b3dc501cc5a/documentation-small.png)
+<p>
+Our work is all documented on our collective wiki but working with and next to the development team meant we could collaborate in order to understand where and how we were making trade-offs. This was important for planning future sprints and understanding the development cost of each of the constituent elements of the feature.
+</p>
+<p>
+In this case, I showed videos of the various iterations with downloadable copies of the prototypes. This was documented next to findings from the research sessions. We used this as a discussion point for cluster meetings. One of our listed key-aims was to reduce the time people spent using trickplay to allow them to watch TV uninterrupted.
+</p>
+<h3>Delivery & reception</h3>
+<p>
+When planning how we would sequence the delivery of the feature, we decided to release it before adding any of the visual affordances and it now worked without having to use trickplay first. When it was released, some people using the feature thought it was strange and hard to understand.
+</p>
+<p>
+We often discuss people's expectations from the old software and how changes can be confusing. In this case I think we had to wait until we had visual affordances before releasing the feature. In the planning process, I became too enthused about releasing the feature and it sounded like it would be a long time before it was planned for delivery so I agreed to releasing it in a smaller form. If I had to do this again, I would show the value this feature has in relation to other major projects with our business partners and how it would impact their customers. I don't think we communicated the value of the full feature well enough to ensure that it was delivered in a complete form.
+</p>
+<p>
+That being said, it does allow people to do what it was intended to do and people are now using it to jump through those long sports programmes and get to their favourite TV scenes. People are spending less time in trickplay and enjoying their TV recordings.
+</p>
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0645e18d-32f1-42d0-a20a-f95b5f1840ba/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0645e18d-32f1-42d0-a20a-f95b5f1840ba/Untitled.png)
