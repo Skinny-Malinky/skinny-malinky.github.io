@@ -15,7 +15,7 @@ intro: Playback is the core of the YouView experience and we aim to get people t
 ---
 
 <figure>
-<video src="<%= config[:host] %><%= current_page.data.image_extension %><%= current_page.data.hero_file %>" alt="<%= current_page.data.hero_alt %>"></img>
+<video autoplay="true" muted="true" controls="true" src="<%= config[:host] %><%= current_page.data.image_extension %><%= current_page.data.hero_file %>" alt="<%= current_page.data.hero_alt %>"></img>
 </figure>
 
 <p>
