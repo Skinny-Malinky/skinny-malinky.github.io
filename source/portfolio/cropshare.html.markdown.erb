@@ -7,14 +7,15 @@ byline: How can we create stronger connections between food growers and urban ci
 publish_to_blog: false
 published: false
 layout: portfolio-post
-hero_extension: /blog/posts/2018/images/cropshare/cropshare-hero.jpg
+image_extension: /blog/posts/2018/images/cropshare/
+hero_file: cropshare-hero.jpg
 hero_alt: A wooden totem is shown with a series of buttons set in hessian. The buttons circulate the central column and have labels laser cut into them. The labels indicate different types of British grown foods.
 year: 2014
 org: Duncan of Jordanstone
 intro: Supermarkets and chain retailers dominate our high streets and many of us have a limited understanding of supply chains and the challenges that come with growing food.
 ---
 <figure>
-<img src="<%= config[:host] %><%= current_page.data.hero_extension %>" alt="<%= current_page.data.hero_alt %>"></img>
+<img src="<%= config[:host] %><%= current_page.data.image_extension %><%= current_page.data.hero_file %>" alt="<%= current_page.data.hero_alt %>"></img>
 </figure>
 
 Supermarkets and chain retailers dominate our high streets and many of us have a limited understanding of supply chains and the challenges that come with growing food. They squeeze out local suppliers and outlets.
