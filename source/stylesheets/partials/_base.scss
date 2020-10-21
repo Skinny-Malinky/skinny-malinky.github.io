@@ -13,7 +13,6 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  min-width: 100vw;
   font: 300 22px $base-font-family;
   line-height: 2.2em;
   color: white;
@@ -27,6 +26,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: always;
   -moz-osx-font-smoothing: auto;
+  width: 100vw;
 }
 
 /**

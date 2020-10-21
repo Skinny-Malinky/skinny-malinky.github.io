@@ -3,7 +3,11 @@
   <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title + "\ \|\ Struan\'s\ blog"}) %>
     <body>
       <%= partial "layouts/partials/min-header" %>
-        <div class="main" role="main" id="main">
+        <div class="nav-layout">
+        <nav>
+        <a href = "../#main" class="back">Blog Posts</a>
+        </nav>
+        <main role="main" id="main">
           <div class="content-container">
             <div class="content-margin">
               <div class="post-description">
@@ -23,6 +27,7 @@
                 </span>
                 <a href="#top" class="back-to-top"></a>
             </div>
+          </main>
           </div>
         </div>
         <!-- <%= partial "layouts/partials/footer" %> -->

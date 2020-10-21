@@ -7,7 +7,9 @@ publish_to_blog: false
 published: false
 layout: portfolio-post
 image_extension: /images/portfolio/playback/
+hero_type: video
 hero_file: jump.mp4
+poster: watch-youview.jpg
 hero_alt: A prototype showing numbers below the playback bar allowing the user to jump later into the programme.
 year: 2017 - 2019
 org: YouView
@@ -15,11 +17,11 @@ intro: Playback is the core of the YouView experience and we aim to get people t
 ---
 
 <figure>
-<video autoplay="true" muted="true" controls="true" src="<%= config[:host] %><%= current_page.data.image_extension %><%= current_page.data.hero_file %>" alt="<%= current_page.data.hero_alt %>"></img>
+<video poster="<%= config[:host] %><%= current_page.data.image_extension %>watch-youview.jpg" autoplay muted controls src="<%= config[:host] %><%= current_page.data.image_extension %><%= current_page.data.hero_file %>"></video>
 </figure>
 
 <p>
-I joined YouView at the start of the creation of its new next-generation set-top-box software. As a design team we had to design a new system that was robust, flexible, familiar and contemporary. 
+I joined YouView at the start of the creation of its next-generation set-top-box software. As a design team we had to design a new system that was robust, flexible, familiar and contemporary. 
 </p>
 
 <p>

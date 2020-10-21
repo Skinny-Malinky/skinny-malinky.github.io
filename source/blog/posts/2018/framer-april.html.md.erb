@@ -10,7 +10,7 @@ tags: ["framer", "portfolio", "frameworks", "creative-code"]
 <video src="<%= config[:host] %>/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
 </figure>
 <figcaption>Hello world, hello TV</figcaption>
-## Prototyping for TV
+### Prototyping for TV
 
 Information about user research and prototyping for TV is lacking compared to mobile & web. Most of it is transferrable but – at YouView – we've encountered problems where we've had to innovate in order to achieve what's standard practice on other platforms. One of the biggest barriers has been prototyping because we use infrared input and there aren't any obvious, pre-packaged solutions for prototyping with a remote control.
 
@@ -26,7 +26,7 @@ Axure was good in that it was one of the few prototyping tools that allowed for 
 
 We got by like this for some time and when we needed more intricate prototypes, we would hire contractors who weren't from a design background. That made communication difficult.
 
-## Enter Framer.
+### Enter Framer.
 
 Framer was introduced to me by a colleague who described it as, 
 > ...pretty much javascript. If you can use that you might as well work on the set top box.
@@ -45,11 +45,11 @@ A year of learning later and we're finding it's quite hard to get an entire desi
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-## Keyboard Input for Framer
+### Keyboard Input for Framer
 
 After many prototypes I felt like I'd come to a conclusion about how I wanted to use keyboard input in a way that was relatively similar to Framer's existing syntax. It still requires a knowledge of functions which I think was a bit of a stumbling block. That said, you only have to write one line of code for each key which simplifies things considerably –
 
-### The Old Way
+#### The Old Way
 ```
 enter = 13
 document.addEventListener 'keydown', (event) ->
@@ -62,7 +62,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) ->
 			doSomething()
 ```
 
-### The New Way
+#### The New Way
 ```
 keyboard.onKey(keyboard.enter, doSomething, 0.3)
 ```

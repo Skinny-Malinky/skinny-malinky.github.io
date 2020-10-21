@@ -2,13 +2,13 @@
 <html>
   <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title}) %>
     <body>
-        <div class="main" role="main">
+        <main role="main" id="main">
             <div class="content-container">
                 <div class="content-margin">
                     <%= yield %>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 
 </html>

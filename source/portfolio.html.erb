@@ -1,7 +1,7 @@
 --- 
 layout: portfolio 
 ---
-  <% sub_pages('portfolio/').each do |article| %>
+  <% sub_pages('portfolio/').reverse.each do |article| %>
   <% if article.data.title != "" %>
   <% puts article.data.title %>
     <div id="clean-text">
@@ -15,11 +15,12 @@ layout: portfolio
       </h3>
       <article>
       <figure>
-      <picture>
-      <source type="video/mp4" src="<%= config[:host] %><%= article.data.image_extension %><%= article.data.hero_file %>" alt="<%= article.data.hero_alt %>"></video>
-      <img src="<%= config[:host] %><%= article.data.image_extension %><%= article.data.hero_file %>" alt="<%= article.data.hero_alt %>">
+      <% if article.data.hero_type == 'image' %>
+        <img src="<%= config[:host] %><%= article.data.image_extension %><%= article.data.hero_file %>" alt="<%= article.data.hero_alt %>">
+      <% else %>
+        <video autoplay muted controls type="video/mp4" poster="<%= config[:host] %><%= article.data.image_extension %><%= article.data.poster %>" src="<%= config[:host] %><%= article.data.image_extension %><%= article.data.hero_file %>"></video>
+      <% end %>
       </figure>
-      </picture>
       <p><%= article.data.intro %>..</p>
       </article>
       <span class="post-meta">

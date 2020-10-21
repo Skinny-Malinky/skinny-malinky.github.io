@@ -4,7 +4,11 @@
   
     <body>
       <%= partial "layouts/partials/min-header" %>
-        <div class="main" role="main" id="main">
+        <div class="nav-layout">
+        <nav>
+        <a href = "./#main" class="back">Portfolio Posts</a>
+        </nav>
+        <main role="main" id="main">
           <div class="content-container">
             <div class="content-margin">
               <div class="post-description">
@@ -23,9 +27,11 @@
                 <span class="post-meta">
                 <em><%= current_page.data.org %></em> <%= current_page.data.year %> 
                 </span>
+                <a href="#top" class="back-to-top"></a>
               </div>
             </div>
           </div>
+        </main>
         </div>
         <!-- <%= partial "layouts/partials/footer" %> -->
     </body>

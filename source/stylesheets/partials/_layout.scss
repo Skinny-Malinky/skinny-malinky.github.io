@@ -1,5 +1,4 @@
-.main {
-  background: linear-gradient(hsl(0, 0, 12), hsl(0, 0, 15));
+main {
   position: relative;
   display: block;
   color: white;
@@ -7,7 +6,7 @@
 
 .summary {
   margin-bottom: 8em;
-  padding: 3em 4em 3em 4em;
+  padding: 2em 3em;
   transition: all 0.3s ease-in-out;
   h3.byline {
     font-weight: 100;
@@ -47,13 +46,21 @@
   }
 }
 
+nav {
+  margin: 0 auto 3rem;
+  width: 79ch;
+}
+
+.nav-layout {
+  padding-top: 10rem;
+}
+
 .content-margin {
-  margin: 0 1em 0 1em;
-  padding: 0 0.3em 0 0.3em;
+  flex-grow: 8;
+  margin: 0 4rem;
 }
 .content-margin > h1 {
-  margin-left: 1.2em;
-  padding-bottom: 0.5em;
+  padding-bottom: 3rem;
   @media(max-width: 580px) {
     margin-left: 30px;
   }
