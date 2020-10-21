@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
+@import url("https://fonts.googleapis.com/css?family=Sanchez:300,400");
+@import "partials/magnific";
+$primary: #ff8923;
+$secondary: #ffb100;
+@mixin cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    filter: "progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+@mixin circleimg($cwidth) {
+    width: $cwidth;
+    height: $cwidth;
+    border-radius: $cwidth;
+    -webkit-border-radius: $cwidth;
+    -moz-border-radius: $cwidth;
+}
+
+@mixin shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 15px rgba(0, 0, 0, 1);
+}
+
+html {
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    display: block;
+    min-height: 100%;
+    @include cover;
+}
+
+a {
+    text-decoration: none;
+    color: #313131;
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    margin-top: 0px;
+    word-spacing:0.1em;
+}
+
+hr {
+    border-color: lighten($primary, 20%);
+    border-color: lighten($primary, 20%);
+    width: 90%;
+}
+
+h1 {
+    font: 5em "Sanchez";
+    letter-spacing: 0.04em;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-family: 'Sanchez';
+    font-weight: 401;
+    font-size: 1.25em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    margin: 20px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    display: block;
+    p {
+        font-style: italic;
+        font-size: 1em;
+        float: right;
+        color: white;
+    }
+}
+
+.fader {
+    display: block;
+}
+
+.contact {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    .icon {
+        @include circleimg(100px);
+        float: left;
+        margin: 20px;
+        @include shadow;
+        background-color: white;
+        border-width: thick;
+        border-style: dotted;
+        &:hover {
+            background-color: darken(white, 15%);
+            transition: .2s ease;
+        }
+    }
+}
+
+#twitter {
+    border-color: rgb(94, 169, 221);
+    img {
+        margin-top: 26px;
+        margin-left: 22px;
+    }
+}
+
+#gmail {
+    border-color: rgb(213, 77, 64);
+    img {
+        margin: 20px;
+    }
+}
+
+#container {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#clear {
+    clear: both;
+}
+
+#intro {
+    color: white;
+    width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    h1 {
+        color: #fff;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+        margin-bottom: 1.1rem;
+    }
+    p {
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+}
+
+#portfolio {
+    display: none;
+}
+
+.back {
+    margin: 50px;
+    position: fixed;
+    button {
+        font-weight: 100;
+        font-size: 1em;
+        color: white;
+        border-radius: 100px;
+        border-color: white;
+        width: 75px;
+        height: 75px;
+        @include shadow;
+    }
+}
+
+.links {
+    p {
+        margin: 0px;
+        text-align: center;
+        margin-top: 10px;
+        font: 1.1em;
+    }
+    a {
+        margin: 0px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+.content {
+    width: 920px;
+    height: auto; //it's normally 10px
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; // h3 {
+    #discuss {
+        p,
+        h3 {
+            margin: 10px;
+            padding: 10px;
+        }
+        margin: auto;
+        width: 600px;
+        height: auto;
+        background: white;
+        @include shadow;
+    }
+}
+
+.newpost {
+    background-color: white;
+    min-height: 355px;
+    max-height: 355px;
+    width: 200px;
+    float: left;
+    margin: 15px;
+    @include shadow;
+    p {
+        font-weight: 100;
+        margin-top: 0px;
+        margin-bottom: 2px;
+    }
+    img {
+        height: auto;
+        width: 200px;
+    }
+    h1 {
+        font-family: 'Sanchez';
+        font-weight: 401;
+        font-size: 1.25em;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: #2f2f2f;
+    }
+    .extract {
+        margin: 15px;
+        margin-top: 6px;
+        height: auto;
+    }
+}
+
+//////////Fancy buttons/////////////
+.btn {
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+    height: 45px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sm {
+    width: 10%;
+}
+
+.md {
+    width: 20%;
+}
+
+.lg {
+    width: 40%;
+}
+
+.cta {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'roboto slab';
+    font-weight: 400;
+    background-color: $primary;
+    color: white;
+    transition: .2s ease;
+    @include shadow;
+    &:hover {
+        background-color: darken($primary, 10%); //color: $primary;
+        //border: 1px solid $primary;
+        transition: .2s ease;
+    }
+}
+
+.ghost {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    background-color: transparent;
+    border-style: double;
+    border-width: thick;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: .2s ease;
+    &:hover {
+        background-color: $primary;
+        color: white;
+        transition: .2s ease;
+    }
+}
+
+.secondary {
+    background-color: $secondary;
+    color: $primary;
+    transition: .2s ease;
+    &:hover {
+        background-color: darken($secondary, 10%); //color: white;
+        transition: .2s ease;
+    }
+}
+
+.disabled {
+    color: darken($secondary, 20%);
+    background-color: darken($secondary, 5%);
+    &:hover {
+        cursor: initial;
+    }
+}
+
+/////////////////////////////////////////////
+.white-popup {
+    position: relative;
+    background: #FFF;
+    overflow: auto;
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+    p {
+        margin: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    h3 {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+}
+
+.middle {
+    width: 100%;
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    object {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+#composite {
+    padding-bottom: 0px;
+    img {
+        vertical-align: middle;
+        float: left;
+        margin: 20px;
+        max-height: 500px;
+    }
+    iframe {
+        margin-bottom: 20px;
+    }
+}
+
+@import "partials/media-queries";
