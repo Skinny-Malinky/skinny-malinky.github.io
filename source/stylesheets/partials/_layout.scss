@@ -8,12 +8,18 @@ main {
   margin-bottom: 8em;
   padding: 2em 3em;
   transition: all 0.3s ease-in-out;
+  h2 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
   h3.byline {
     font-weight: 100;
     font-style: italic;
     position: relative;
     z-index: 1;
     font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom:1rem;
     &::before {
       content: "";
       position: absolute;

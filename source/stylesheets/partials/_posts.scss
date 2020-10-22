@@ -67,6 +67,7 @@ article {
     font-weight: 100;
     font-style: italic;
     font-size: 2rem;
+    line-height: 1.5;
     margin-top: 0.5em;
     margin-bottom: 1em;
   }
@@ -96,6 +97,6 @@ article {
   font-family: $heading-font-family;
   margin: 0 auto 0;
   &:before {
-    content: "🡐 ";
+    content: "← ";
   }
 }
