@@ -1,7 +1,7 @@
 # Setup Variables
 document.body.style.cursor = "auto"
 Screen.backgroundColor = '#000'
-Canvas.image = 'http://design-prototypes.dev.youview.co.uk/images/back.jpg'
+Canvas.image = 'https://struanfraser.co.uk/images/youview-back.jpg'
 
 youviewBlue = '#00a6ff'
 youviewBlue2 = '#0F5391'
@@ -156,6 +156,28 @@ for i in [0..9]
 	
 	remoteNumber.push(remoteNumbers)
 
+# Instructions
+instBackground = new Layer
+	width: 500
+	height: 220
+	backgroundColor: '#1f1f1f'
+	borderStyle: 'dotted'
+	borderRadius: 20
+	borderWidth: 2
+	borderColor: 'white'
+	x: 20, y: 20
+instTitle = new TextLayer
+	parent: instBackground
+	text: 'Instructions'
+	x: 30, y: 15, color: white
+instDesc = new TextLayer
+	parent: instBackground
+	html: '<p style="margin-bottom:5px;">. – fast forward</p>
+	<p style="margin-bottom:5px;">0-9 – number input</p>
+	<p style="margin-bottom:5px;">← or → – D-Pad (move to adjacent number)</p>
+	<p style="margin-bottom:5px;">⏎ – OK / Play</p>', fontSize: 20
+	x: 30, y: 75, color: white
+
 # Clock
 today = new Date
 hour = today.getHours()
@@ -201,7 +223,7 @@ recording = new VideoLayer
 	backgroundColor: '#000'
 	x:0, y:0
 # recording.player.autoplay = true
-recording.player.muted = true
+# recording.player.muted = true
 # recording.player.controls = true
 recording.ignoreEvents = false
 playTime = recording
@@ -378,7 +400,6 @@ findNearest = (direction) ->
 	nearestTenth = Math.round(currentPercent / 10)
 	if (direction == 'right' and nearestTenth <= 8)
 		nearestTenth += 1
-		print nearestTenth
 		timeJump( duration / 100 * nearestTenth * 10, nearestTenth )
 	else if (now < ( duration / nearestTenth + 5000 ) and nearestTenth > 0)
 		nearestTenth = nearestTenth - 1
@@ -450,8 +471,10 @@ playSpeed = (speed) ->
 	recording.player.playbackRate = speed
 	if speed > 1
 		patchText.text = 'x' + speed
+		recording.player.muted = true
 		showNumbers()
 	else if speed == 1
+		recording.player.muted = false
 		patchText.text = 'play' if patchText.text != "Jump To"
 		hideNumbers()
 	else if speed < 1

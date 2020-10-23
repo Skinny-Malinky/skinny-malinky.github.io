@@ -119,7 +119,9 @@ One of the first concepts that appeared came from one of our developers who had 
 <p>
 The following is a recreation of that prototype. This was made using Framer Classic and all of the following prototypes are drafts designed to provoke a reaction, not to be a final design comp. They also tend to be a little glitchy but working perfectly is not the point. When testing it, we use a <a href="https://flirc.tv/more/flirc-usb">FLIRC controller</a> to convert remote control input into keyboard input. In the prototype, type a number in whole minutes that is less than the duration of the film.
 </p>
-<a class="prototype-feature" href="<%= config[:host] %>/prototypes/whole-minutes">The first prototype that takes input in whole minutes</a>
+<div class="prototype-feature">
+<a href="<%= config[:host] %>/prototypes/whole-minutes">The first prototype that takes input in whole minutes</a>
+</div>
 
 <!-- Integrate intro prtotoypes
   <li>. - Fast forward</li>
@@ -146,7 +148,9 @@ People were also typing in several numbers because they were looking for a parti
 <p>
 One of the first things I chose to tackle was the changing from hours to minutes. I tried to create a prototype that figured out whether you were typing in hours or minutes based on the event and the number of digits you type. For long events this is important because three hours and 12 minutes can be difficult to translate to whole minutes. The reaction was similar to the previous prototype and people seemed to understand it but I still wasn't happy with it.
 </p>
-<a class="prototype-feature" href="<%= config[:host] %>/prototypes/hours-minutes">The second prototype allows you to type one hour and 3 minutes</a>
+<div class="prototype-feature">
+<a href="<%= config[:host] %>/prototypes/hours-minutes">The second prototype allows you to type one hour and 3 minutes</a>
+</div>
 <p>
 From these tests I was starting to think that what we were doing was essentially building a bookmark tool but without the bookmark. You have to remember the time you've progressed through a programme: this could be handled by the system. To me this was a signal that the model was wrong and we were relying on recall rather than recognition. If people were going back and forth in the programme, you shouldn't have to press several buttons to quickly scan through it.
 </p>
@@ -189,7 +193,9 @@ This allowed us to determine if the association of visual affordances to functio
 This was extremely successful and the feedback was invaluable in making small improvements that made the micro-interactions feel tighter and more direct.
 </p>
 <p>
+  <div class="prototype-feature">
 <a href="<%= config[:host] %>/prototypes/percent-nav">You can try the prototype that came out of this session here.</a>
+</div>
 </p>
 <h3>Accessibility</h3>
 <p>I had some concerns that the animation involved in the interaction could be a problem for those with vestibular disorders. The transient nature of the interaction could also make it difficult to complete the action in the alloted time. To give room for decision-making, we used similar timeouts that we'd used in other areas of the system that had been tested with the Royal National Institute of Blind People. 

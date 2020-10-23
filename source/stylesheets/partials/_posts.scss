@@ -100,3 +100,16 @@ article {
     content: "← ";
   }
 }
+.prototype-feature {
+  margin-bottom: 1.7rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem dotted white;
+  background-color: hsl(0, 0, 15);
+  &:before {
+    content: 'Prototype!';
+    display: block;
+    font-family: $heading-font-family;
+    font-weight: 400;
+  }
+}

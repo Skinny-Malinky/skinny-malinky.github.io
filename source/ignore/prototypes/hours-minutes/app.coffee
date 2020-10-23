@@ -1,6 +1,7 @@
 # Setup Variables
 document.body.style.cursor = "auto"
 Screen.backgroundColor = '#000'
+Canvas.image = 'https://struanfraser.co.uk/images/youview-back.jpg'
 
 youviewBlue = '#00a6ff'
 youviewBlue2 = '#0F5391'
@@ -115,10 +116,31 @@ patchText = new TextLayer
 
 title = new TextLayer
 	parent:playbackBarContainer
-	text:'Doctor Who'
+	text: "Gulliver's Travels"
 	fontFamily:'fsme-light', fontSize:36, color:'#ebebeb'
 	width:848, height:36
 	x:startTime.x, y:550
+
+# Instructions
+instBackground = new Layer
+	width: 500
+	height: 220
+	backgroundColor: '#1f1f1f'
+	borderStyle: 'dotted'
+	borderRadius: 20
+	borderWidth: 2
+	borderColor: 'white'
+	x: 20, y: 20
+instTitle = new TextLayer
+	parent: instBackground
+	text: 'Instructions'
+	x: 30, y: 15, color: white
+instDesc = new TextLayer
+	parent: instBackground
+	html: '
+	<p style="margin-bottom:5px;">0-9 – number input</p>
+	<p style="margin-bottom:5px;">⏎ – OK / Play</p>', fontSize: 20
+	x: 30, y: 75, color: white
 
 # Clock
 today = new Date
@@ -165,7 +187,6 @@ recording = new VideoLayer
 	backgroundColor: '#000'
 recording.center()
 recording.player.autoplay = true
-recording.player.muted = true
 # recording.player.controls = true
 recording.ignoreEvents = false
 playTime = recording
