@@ -61,7 +61,7 @@ startTime = new TextLayer
 	parent:playbackBarContainer
 	text:''
 	width:50, height:16
-	fontSize:16, fontFamily:'fsme-bold', letterSpacing:0.3, color:'#b5b5b5'
+	fontSize:16, fontFamily:'sans-serif, fsme-bold', letterSpacing:0.3, color:'#b5b5b5'
 	color:youviewBlue
 	maxY:playbackLine.maxY+4, x:209
 
@@ -70,7 +70,7 @@ endTime = new TextLayer
 	autoWidth:true
 	text:''
 	width:50, height:16
-	fontSize:16, fontFamily:'fsme-bold', letterSpacing:0.3, color:'#b5b5b5'
+	fontSize:16, fontFamily:'sans-serif, fsme-bold', letterSpacing:0.3, color:'#b5b5b5'
 	maxY:playbackLine.maxY+4, x:playbackLine.maxX + 8
 
 patchBack = new Layer
@@ -100,7 +100,7 @@ patchIcon = new Layer
 patchRCNInput = new TextLayer
 	parent:patchBack
 	width:120, height:36, y:30
-	fontFamily: 'fsme-bold', fontSize: 30, textAlign: 'center', letterSpacing: 1.12
+	fontFamily: 'sans-serif, fsme-bold', fontSize: 30, textAlign: 'center', letterSpacing: 1.12
 	color:'#ebebeb'
 	text:''
 
@@ -109,7 +109,7 @@ patchText = new TextLayer
 	text:'Play'
 	midX:patchBack.midX
 	y:startTime.y
-	fontFamily:'fsme-bold', fontSize:16, color:'#ebebeb', textTransform:'uppercase', textAlign:'center'
+	fontFamily:'sans-serif, fsme-bold', fontSize:16, color:'#ebebeb', textTransform:'uppercase', textAlign:'center'
 	height:16, width:128
 	clip:true
 	backgroundColor: 'transparent'
@@ -117,7 +117,7 @@ patchText = new TextLayer
 title = new TextLayer
 	parent:playbackBarContainer
 	text: "Gulliver's Travels"
-	fontFamily:'fsme-light', fontSize:36, color:'#ebebeb'
+	fontFamily:'sans-serif, fsme-light', fontSize:36, color:'#ebebeb'
 	width:848, height:36
 	x:startTime.x, y:550
 
@@ -155,7 +155,7 @@ currentTime = new TextLayer
 	text:hour + ':' + minute
 	maxX:1216
 	y:36
-	fontFamily:'fsme'
+	fontFamily:'sans-serif, fsme'
 	fontSize:30
 	color:'#ebebeb'
 
