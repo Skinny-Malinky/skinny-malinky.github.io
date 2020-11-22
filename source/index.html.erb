@@ -17,28 +17,23 @@ per_page: 10
       <% end %>
         <% page_articles.each_with_index do |article, i| %>
         <% if article.data.publish_to_blog == true %>
-
-        <div id="clean-text">
+        <article class="clean-text">
         <% link_to article.path, :relative => true, :fragment => 'main' do %>
         <div class="summary">
-          
           <h2>
             <%= article.title %>
           </h2>
           <h3 class="byline">
             <%= article.data.byline %>
           </h3>
-          <article>
             <%= article.summary(180) %>
-          </article>
           <hr />
           <span class = "post-meta">
             Published <strong><em><%= article.date.strftime('%e %B %Y') %></em></strong>
           </span>
         </div>
         <% end %>
-        
-      </div>
+        </article>
       <% end %>
       <% end %>
 

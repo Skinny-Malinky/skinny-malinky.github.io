@@ -3,8 +3,8 @@ layout: portfolio
 ---
   <% sub_pages('portfolio/').reverse.each do |article| %>
   <% if article.data.title != "" %>
+  <article class="clean-text">
   <% puts article.data.title %>
-    <div id="clean-text">
     <% link_to article.path, :fragment => 'main' do %>
     <div class="summary">
       <h2>
@@ -13,7 +13,6 @@ layout: portfolio
       <h3 class="byline">
         <%= article.data.byline %>
       </h3>
-      <article>
       <figure>
       <% if article.data.hero_type == 'image' %>
         <img src="<%= config[:host] %><%= article.data.image_extension %><%= article.data.hero_file %>" alt="<%= article.data.hero_alt %>">
@@ -22,14 +21,13 @@ layout: portfolio
       <% end %>
       </figure>
       <p><%= article.data.intro %>..</p>
-      </article>
+  
       <span class="post-meta">
       <hr />
       <em><%= article.data.org %></em> <%= article.data.year %> 
       </span>
-      
+    <% end %>
+    </article>
+    <% end %>
+    <% end %>
     </div>
-    <% end %>
-    </div>
-    <% end %>
-    <% end %>

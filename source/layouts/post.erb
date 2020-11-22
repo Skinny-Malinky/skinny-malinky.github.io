@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title + "\ \|\ Struan\'s\ blog"}) %>
     <body>
       <%= partial "layouts/partials/min-header" %>
@@ -7,7 +7,8 @@
         <nav>
         <a href = "../../#main" class="back">Blog posts</a>
         </nav>
-        <main role="main" id="main">
+        <main id="main">
+        <article>
           <div class="content-container">
             <div class="content-margin">
               <div class="post-description">
@@ -18,19 +19,17 @@
                   <%= current_page.data.byline %>
                 </h2>
               </div>
-                <article>
                   <%= yield %>
-                </article>
                 <hr />
                 <span class="post-meta">
                   Published <em><%= current_page.date.strftime('%e %B %Y') %></em>
                 </span>
+                </article>
                 <a href="#top" class="back-to-top"></a>
             </div>
           </main>
           </div>
         </div>
-        <!-- <%= partial "layouts/partials/footer" %> -->
     </body>
 
 </html>
