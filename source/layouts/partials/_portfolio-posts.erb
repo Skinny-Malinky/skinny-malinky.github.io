@@ -1,0 +1,21 @@
+<h1 style="margin-top:15rem;">More posts</h1>
+<% sub_pages('portfolio/').reverse.each do |article| %>
+  <% if article != current_page %>
+  <article class="clean-text">
+  <% puts article.data.title %>
+    <% link_to article, :fragment => 'main' do %>
+    <div class="summary" style="margin-bottom: 2rem;">
+      <h2>
+        <%= article.data.title %>
+      </h2>
+      <h3 class="byline">
+        <%= article.data.byline %>
+      </h3>
+      <span class="post-meta">
+      <hr />
+      <em><%= article.data.org %></em> <%= article.data.year %> 
+      </span>
+    <% end %>
+    </article>
+    <% end %>
+    <% end %>

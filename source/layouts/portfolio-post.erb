@@ -1,38 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <%= partial(:"layouts/partials/head", :locals => {:title => current_page.data.title}) %>
-  
-    <body>
-      <%= partial "layouts/partials/min-header" %>
-        <div class="nav-layout">
-        <nav>
-        <a href = "../#main" class="back">Portfolio posts</a>
-        </nav>
-        <main id="main">
-        <article>
-          <div class="content-container">
-            <div class="content-margin">
-              <div class="post-description">
-                <h1>
-                  <%= current_page.data.title %>
-                </h1>
-                <h2 class="byline">
-                  <%= current_page.data.byline %>
-                </h2>
-              </div>
-              <div class="post-content">
-                  <%= yield %>
-                <hr />
-                <span class="post-meta">
-                <em><%= current_page.data.org %></em> <%= current_page.data.year %>
-                </span>
-                </article>
-                <a href="#top" class="back-to-top"></a>
-              </div>
-            </div>
-          </div>
-        </main>
-        </div>
-    </body>
+	<%= partial(:"layouts/partials/head", :locals => {:title =>
+	current_page.data.title}) %>
 
+	<body>
+		<%= partial "layouts/partials/min-header" %>
+		<div class="nav-layout">
+			<nav>
+				<a href="../#main" class="back">Portfolio posts</a>
+			</nav>
+			<div class="content-container">
+				<div class="content-margin">
+					<main id="main">
+						<article>
+							<div class="post-description">
+								<h1><%= current_page.data.title %></h1>
+								<h2 class="byline"><%= current_page.data.byline %></h2>
+							</div>
+							<div class="post-content">
+								<%= yield %>
+								<hr />
+								<span class="post-meta">
+									<em><%= current_page.data.org %></em> <%=
+									current_page.data.year %>
+								</span>
+							</div>
+						</article>
+					</main>
+					<%= partial "layouts/partials/portfolio-posts" %>
+				</div>
+			</div>
+			<a href="#top" class="back-to-top"></a>
+		</div>
+	</body>
 </html>

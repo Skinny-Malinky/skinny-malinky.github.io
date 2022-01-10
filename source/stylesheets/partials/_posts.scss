@@ -113,3 +113,11 @@ article {
     font-weight: 400;
   }
 }
+.gallery {
+  display: flex;
+  justify-content: center;
+  > * {
+    margin-left: 1em;
+    width: unset;
+  }
+}
