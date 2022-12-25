@@ -19,7 +19,7 @@
       <name>Struan Fraser</name>
     </author>
     <content type="html">&lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel.gif" alt="The text types 'carousel = new Carousel' and a carousel appears in the preview window" class="full-width"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel.gif" alt="The text types 'carousel = new Carousel' and a carousel appears in the preview window" class="full-width"&gt;&lt;/img&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;I&amp;rsquo;ve finally got access to Framer X again! Unfortunately I haven&amp;rsquo;t had much access to time. Until I do work up the courage to begin properly learning React again, I have some tools that I&amp;rsquo;d like to share. &lt;/p&gt;
@@ -27,7 +27,7 @@
 &lt;p&gt;First of all, there&amp;rsquo;s EasyNav.
 &lt;a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio" target="_blank"&gt;
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/easynav.png" alt="Five frames show a highlighted position in logical order. The center frame shows blue a highlight; the top frame shows a slightly higher highlight in the frame; the bottom frame, slightly lower; the left frame shows a highlight to the left and the right frame shows a highlight to the right." class="full-width"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/easynav.png" alt="Five frames show a highlighted position in logical order. The center frame shows blue a highlight; the top frame shows a slightly higher highlight in the frame; the bottom frame, slightly lower; the left frame shows a highlight to the left and the right frame shows a highlight to the right." class="full-width"&gt;&lt;/img&gt;
 &lt;figcaption&gt;
 This is EasyNav
 &lt;/figcaption&gt;
@@ -46,13 +46,13 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;This project was made to give us a set of standard patterns to use for prototyping at YouView. I&amp;rsquo;ve removed all of the YouView stuff but it still leaves you with quite a lot of power and has also taught me a great deal about javascript. I&amp;rsquo;ll post some gifs to show the basics of it:
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel-two.gif" alt="carousel = new Carousel is written in an IDE and the preview shows the carousel appear." class="full-width"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel-two.gif" alt="carousel = new Carousel is written in an IDE and the preview shows the carousel appear." class="full-width"&gt;&lt;/img&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/menu.gif" alt="menu = new Menu is written in an IDE and the preview shows the menu appear." class="full-width"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/menu.gif" alt="menu = new Menu is written in an IDE and the preview shows the menu appear." class="full-width"&gt;&lt;/img&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/programme-tile.gif" alt="programmeTile = new ProgrammeTile is written in an IDE and the preview shows the tile appear" class="full-width"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/programme-tile.gif" alt="programmeTile = new ProgrammeTile is written in an IDE and the preview shows the tile appear" class="full-width"&gt;&lt;/img&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;At YouView we have set these up to work with our APIs meaning we get all of the cloud metadata that we&amp;rsquo;re not showing here. This means we have carousels that work with Search, Discover, the Main Menu, the Miniguide and any combined mix you might want. These components are also fully interactive. One of the problems I&amp;rsquo;d started to notice however was how we could navigate between the components, this is where I created Navigables.&lt;/p&gt;
@@ -80,13 +80,13 @@ EasyNav reads the document and infers navigation from the position of each Frame
       <name>Struan Fraser</name>
     </author>
     <content type="html">&lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/alpha-trail.mp4" controls class="full-width" autoplay="false" loop&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/alpha-trail.mp4" controls class="full-width" autoplay="false" loop&gt;&lt;/video&gt;
 &lt;figcaption&gt;Requires a cyberpunk backing track&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h3&gt;Stressing out&lt;/h3&gt;
 
-&lt;p&gt;Stress! That&amp;rsquo;s my aim. I wanted to go further than last time. It&amp;rsquo;s clear to me that time is an important element as the last sketch felt &lt;a href="https://struanfraser.co.uk/blog/open-frameworks-and-processing#trippy-webcam" target="_blank"&gt;disconnected and loose&lt;/a&gt;. This has much more of a satisfying, &lt;em&gt;disconcerting&lt;/em&gt;* feel to it. Whenever I use it I feel like I&amp;rsquo;m becoming more stressed just by appearing and moving in the image. It almost makes you want to stop moving. &lt;/p&gt;
+&lt;p&gt;Stress! That&amp;rsquo;s my aim. I wanted to go further than last time. It&amp;rsquo;s clear to me that time is an important element as the last sketch felt &lt;a href="https://www.struanfraser.co.uk/blog/open-frameworks-and-processing#trippy-webcam" target="_blank"&gt;disconnected and loose&lt;/a&gt;. This has much more of a satisfying, &lt;em&gt;disconcerting&lt;/em&gt;* feel to it. Whenever I use it I feel like I&amp;rsquo;m becoming more stressed just by appearing and moving in the image. It almost makes you want to stop moving. &lt;/p&gt;
 
 &lt;p&gt;I suspect this won&amp;rsquo;t be the end of my interest in alpha channels. I&amp;rsquo;ve been looking at an awful lot of &lt;a href="https://www.pinterest.co.uk/struanf/80s-90s-retro-design/" target="_blank"&gt; old VHS covers on pinterest which may have something to do with it.&lt;/a&gt;&lt;/p&gt;
 
@@ -101,13 +101,13 @@ EasyNav reads the document and infers navigation from the position of each Frame
 &lt;h3&gt;Some Bonus Mistakes&lt;/h3&gt;
 
 &lt;div class="fukol-grid"&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-1.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is looking pensive." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-2.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears stretched and super imposed over the original image. Struan is confused." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-3.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan looks very suprised and is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-4.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-5.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-6.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
-    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan is talking to someone out of shot." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-7.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is waving." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-1.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is looking pensive." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-2.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears stretched and super imposed over the original image. Struan is confused." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-3.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan looks very suprised and is waving." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-4.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-5.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed. Struan is waving." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-6.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;figure&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan is talking to someone out of shot." src="https://www.struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-7.png" /&gt;&lt;/figure&gt;&lt;/ul&gt;
 &lt;/div&gt;
 </content>
   </entry>
@@ -121,7 +121,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
       <name>Struan Fraser</name>
     </author>
     <content type="html">&lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/torus.mp4" controls class="full-width" autoplay="false" loop&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/torus.mp4" controls class="full-width" autoplay="false" loop&gt;&lt;/video&gt;
 &lt;figcaption&gt;My First Attempt at THREEJS&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -132,7 +132,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
 &lt;h3&gt; P5.JS&lt;/h3&gt;
 
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/do-it-now.mp4" controls class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/do-it-now.mp4" controls class="full-width"&gt;&lt;/video&gt;
 &lt;figcaption&gt;Made with p5.js&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -142,20 +142,20 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;After giving a friend a little support for their final year project, they offered to let me try out a processing sketch on the fountains at Central Saint Martins –
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/fountain-sketch.mp4" controls&gt;&lt;/video&gt;
-&lt;figcaption&gt;You can see a live demo of the &lt;a href="https://struanfraser.co.uk/fountain-sketch"&gt;Fountain Sketch here&lt;/a&gt;. Made with p5.js.&lt;/figcaption&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/fountain-sketch.mp4" controls&gt;&lt;/video&gt;
+&lt;figcaption&gt;You can see a live demo of the &lt;a href="https://www.struanfraser.co.uk/fountain-sketch"&gt;Fountain Sketch here&lt;/a&gt;. Made with p5.js.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;The left hand side shows the height of the wave: the whiter it is, the higher the wave. The right hand side shows the colour projected through the jet. Unfortunately we ran out of time on the day but I did get this photo of a trial run &lt;i&gt;almost&lt;/i&gt; working correctly – 
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2018/images/trying-libraries/fountain.jpg" alt="The fountains at Central Saint Martins arranged in a sine wave"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2018/images/trying-libraries/fountain.jpg" alt="The fountains at Central Saint Martins arranged in a sine wave"&gt;&lt;/img&gt;
 &lt;figcaption&gt;A Processing Sketch in a Fountain&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
 &lt;h3&gt; P5 with 3D&lt;/h3&gt;
 
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/spinny-ball.mp4" controls class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/spinny-ball.mp4" controls class="full-width"&gt;&lt;/video&gt;
 &lt;figcaption&gt;First foray into 3D using p5.js&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -165,15 +165,15 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;Over the past couple of years, I think I&amp;rsquo;ve finally learned how to wield Twitter effectively and it&amp;rsquo;s introduced me to swathes of new artists&amp;rsquo; and coders&amp;rsquo; work. I found a video of Zach Lieberman talking at the AIGA design conference last year and I found the ease with which he was able to create shapes in code and talk about his journey with creative code inspiring. Seeing that talk made me want to try out Open Frameworks. The following is a result of that exploration –
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/square-grid-swoop-lieberman.mp4" controls class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/square-grid-swoop-lieberman.mp4" controls class="full-width"&gt;&lt;/video&gt;
 &lt;figcaption&gt;An Open Processing Sketch – inspired by/stolen from – Zach Lieberman&amp;rsquo;s AIGA talk.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/lines-and-swoop.mp4" controls class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/lines-and-swoop.mp4" controls class="full-width"&gt;&lt;/video&gt;
 &lt;figcaption&gt;A progression of that initial idea.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/wacky-lines.mp4" controls class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/wacky-lines.mp4" controls class="full-width"&gt;&lt;/video&gt;
 &lt;figcaption&gt;Learning about the importance of using time as this is HECTIC.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
@@ -181,7 +181,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;Colour is also really difficult as you&amp;rsquo;re using time to change the properties of colour. Slowly, mastery of the sine wave is emerging as a necessary skill to create a well composed sketch: it allows for a much more naturalistic shift in colour and space.
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/trying-libraries/chromatic-aberration-webcam.mp4" controls class="full-width" id="trippy-webcam"&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/trying-libraries/chromatic-aberration-webcam.mp4" controls class="full-width" id="trippy-webcam"&gt;&lt;/video&gt;
 &lt;figcaption&gt;Trippy camera stuff made with Open Frameworks.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
@@ -202,7 +202,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
       <name>Struan Fraser</name>
     </author>
     <content type="html">&lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop&gt;&lt;/video&gt;
 &lt;figcaption&gt;Hello world, hello TV&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -214,7 +214,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;A screenshot of one of my colleague&amp;rsquo;s more complicated prototypes –
 &lt;figure&gt;
-&lt;img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop style="margin-bottom:0;"&gt;&lt;/img&gt;
+&lt;img src="https://www.struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop style="margin-bottom:0;"&gt;&lt;/img&gt;
 &lt;figcaption style="margin-top: -0.2em;"&gt;Axure&amp;rsquo;s conditional chaos. And that&amp;rsquo;s a fraction of it.&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
@@ -234,7 +234,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
 
 &lt;p&gt;We&amp;rsquo;d stumbled upon &lt;a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer"&gt;this nifty little example&lt;/a&gt; which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&amp;rsquo;t designed for TV but we persevered. 
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" controls class="full-width" loop&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" controls class="full-width" loop&gt;&lt;/video&gt;
 &lt;figcaption&gt;Using FLIRC with a YouView TV Guide prototype&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
 
@@ -276,7 +276,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&amp;gt;
 &lt;figure&gt;
 &lt;a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"&gt;
 &lt;figure&gt;
-&lt;video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop&gt;&lt;/video&gt;
+&lt;video src="https://www.struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop&gt;&lt;/video&gt;
 &lt;figcaption&gt;Get the Module&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
