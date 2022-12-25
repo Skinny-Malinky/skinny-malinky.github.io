@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair-Display|Lobster');
+$background: #AFD0D5;
+$colour1: rgba(249,
+235,
+199,
+1);
+$colour2: #A56326;
+$colour3: #59361D;
+$colour4: #281C15;
+$colour5: #333;
+body {
+    background-color: $background;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    *+* {
+        margin: 2em;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'adobe-garamond-pro', serif;
+    // 0—360 % % 0–1
+    color: $colour1;
+}
+
+h1 {
+    font-size: 7.2em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans';
+    color: $colour4;
+}
+
+.header-container {
+    margin: 3em 5em 0 0;
+    padding-left: 5em;
+}
+
+.strap-line {
+    width: 50%;
+    margin: 0 0 3em 2em;
+    font-size: 3em;
+    p {
+        font-family: 'Lobster';
+        font-weight: 400;
+        font-size: 1.5em;
+        color: $colour4;
+    }
+}
+
+.project-container {
+    position: relative;
+    width: 100%;
+    height: 20em;
+    padding: 5em;
+    margin: 0;
+    &:nth-child(odd) {
+        background-color: $colour5;
+        .tile {
+            background-color: $background;
+            border: 1em dashed $colour5;
+        }
+    }
+    p {
+        margin-left: 12em;
+        font-family: 'Open Sans';
+        color: #e6e4da;
+        font-size: 2em;
+        width: auto;
+    }
+}
+
+.tile {
+    width: 15em;
+    height: 15em;
+    border-radius: 20em;
+    border: 1em dashed $background;
+    position: absolute;
+    top: 50%;
+    margin-top: -7.5em;
+    background-color: $colour5;
+}

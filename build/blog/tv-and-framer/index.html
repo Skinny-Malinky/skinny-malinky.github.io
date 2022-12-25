@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:title" content="Struan's blog">
+  <meta name="og:description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:url" content="https://www.struanfraser.co.uk">
+  <meta name="og:image" content="https://struanfraser.co.uk/images/hello.png">
+  <link rel="stylesheet" href="https://struanfraser.co.uk/stylesheets/main.css">
+  <title>
+  TV & Framer | Struan's blog
+  </title>
+</head>
+    <body>
+      <header class="site-header">
+    <div class="intro" id="top">
+  <a href="https://struanfraser.co.uk" class="site-title">Struan Fraser</a>
+
+    <div class="site-capabilities">
+      <ul>
+        <li>Product Design</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Creative Code</li>
+      </ul>
+    </div>
+  <div class="note">Places to say hello</div>
+    <ul class="info">
+        <li><a href="http://twitter.com/struanfraser">Twitter – @struanfraser</a></li>
+        <li><a rel="me" href="https://mastodon.scot/@struan">Mastodon – struan@mastodon.scot</a></li>
+      </ul>
+  <!-- <div class="note">Other Work —</div>
+    <ul class="info">
+        <li><a href="http://behance.net/struanfraser">Behance – @struanfraser</a></li>
+        <li><a href="http://github.com/skinny-malinky">Github – @Skinny-Malinky</a></li>
+      </ul> -->
+  </div>
+  
+    <div class="hover-container">
+      <div class="red-hand"></div>
+      <div class="green-hand"></div>
+      <div class="blue-hand"></div>
+    </div>
+</header>
+
+        <div class="nav-layout">
+        <nav>
+        <a href = "../../#main" class="back">Blog posts</a>
+        </nav>
+        <main id="main">
+        <article>
+          <div class="content-container">
+            <div class="content-margin">
+              <div class="post-description">
+                <h1>
+                  TV & Framer
+                </h1>
+                <h2 class="byline">
+                  How we build interactive prototypes at YouView
+                </h2>
+              </div>
+                  <figure>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop></video>
+<figcaption>Hello world, hello TV</figcaption>
+</figure>
+
+<h3>Prototyping for TV</h3>
+
+<p>Information about user research and prototyping for TV is lacking compared to mobile &amp; web. Most of it is transferrable but – at YouView – we&rsquo;ve encountered problems where we&rsquo;ve had to innovate in order to achieve what&rsquo;s standard practice on other platforms. One of the biggest barriers has been prototyping because we use infrared input and there aren&rsquo;t any obvious, pre-packaged solutions for prototyping with a remote control.</p>
+
+<p>It feels like we&rsquo;ve tried every prototyping tool under the sun <em>(R.I.P. Pixate ⚰️)</em>. Using Axure we&rsquo;d tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. </p>
+
+<p>A screenshot of one of my colleague&rsquo;s more complicated prototypes –
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop style="margin-bottom:0;"></img>
+<figcaption style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</figcaption>
+</figure></p>
+
+<p>Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&rsquo;d discovered that you could buy a cheap infrared receiver called a <a href="http://www.flirc.tv">FLIRC</a> and that it could be used to convert infrared input into keyboard input. Perfect.</p>
+
+<p>We got by like this for some time and when we needed more intricate prototypes, we would hire contractors who weren&rsquo;t from a design background. That made communication difficult.</p>
+
+<h3>Enter Framer.</h3>
+
+<p>Framer was introduced to me by a colleague who described it as, </p>
+
+<blockquote>
+<p>&hellip;pretty much javascript. If you can use that you might as well work on the set top box.</p>
+</blockquote>
+
+<p>That was fairly intimidating but equipped with some decaying programming skills from school and a determination to stop using Axure (see above), I&rsquo;d decided to stick with it.</p>
+
+<p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. 
+<figure>
+<video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" controls class="full-width" loop></video>
+<figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption>
+</figure></p>
+
+<p>A year of learning later and we&rsquo;re finding it&rsquo;s quite hard to get an entire design team – with little knowledge of object oriented programming – to use a tool to do something for which it wasn&rsquo;t designed. Keyboard input creates a whole host of problems, such as repeating input and complicated syntax, so we came up with a <em>(hopefully)</em> simpler solution than Framer had previously offered.</p>
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Using a remote control with framer 😎 by <a href="https://twitter.com/struanfraser?ref_src=twsrc%5Etfw">@struanfraser</a> uhuuuu I want to try that too <a href="https://twitter.com/hashtag/framerlondon?src=hash&amp;ref_src=twsrc%5Etfw">#framerlondon</a> <a href="https://t.co/alxncDo4Mq">pic.twitter.com/alxncDo4Mq</a></p>&mdash; Marie Schweiz (@ma_rylou) <a href="https://twitter.com/ma_rylou/status/988867630500057091?ref_src=twsrc%5Etfw">April 24, 2018</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3>Keyboard Input for Framer</h3>
+
+<p>After many prototypes I felt like I&rsquo;d come to a conclusion about how I wanted to use keyboard input in a way that was relatively similar to Framer&rsquo;s existing syntax. It still requires a knowledge of functions which I think was a bit of a stumbling block. That said, you only have to write one line of code for each key which simplifies things considerably –</p>
+
+<h4>The Old Way</h4>
+<div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>enter = 13
+document.addEventListener 'keydown', (event) -&gt;
+    keyCode = event.which
+    eventHandler(keyCode)
+    event.preventDefault()
+eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
+    switch keyCode
+        when enter
+            doSomething()
+</pre></td></tr></tbody></table></code></pre></div>
+<h4>The New Way</h4>
+<div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>keyboard.onKey(keyboard.enter, doSomething, 0.3)
+</pre></td></tr></tbody></table></code></pre></div>
+<p>I&rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&rsquo;d be interested in, take a look –
+<figure>
+<a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer">
+<figure>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop></video>
+<figcaption>Get the Module</figcaption>
+</figure>
+</a></p>
+
+                <hr />
+                <span class="post-meta">
+                  Published <em>22 April 2018</em>
+                </span>
+                </article>
+                <a href="#top" class="back-to-top"></a>
+            </div>
+          </main>
+          </div>
+        </div>
+    </body>
+
+</html>

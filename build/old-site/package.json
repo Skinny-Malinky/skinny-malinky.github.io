@@ -1,0 +1,35 @@
+{
+  "name": "struan-fraser-portfolio",
+  "version": "1.0.0",
+  "description": "The design work of Struan Fraser.",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "dev:sass-dev": "node-sass -w sass -o stylesheets",
+    "dev:new-dev": "node-sass -w new-site/scss -o new-site/css/",
+    "dev:serve-dev": "live-server ./ --port=3002"
+  },
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skinny-Malinky/Skinny-Malinky.github.io.git"
+  },
+  "keywords": [
+    "struan",
+    "fraser",
+    "design",
+    "portfolio",
+    "digital",
+    "interaction"
+  ],
+  "author": "@struanfraser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skinny-Malinky/Skinny-Malinky.github.io/issues"
+  },
+  "homepage": "https://github.com/Skinny-Malinky/Skinny-Malinky.github.io#readme"
+}
