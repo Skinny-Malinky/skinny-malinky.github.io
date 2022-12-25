@@ -82,7 +82,7 @@ set :sass, :output_style => "nested"
 configure :build do
   # Minify CSS on build
   # Minify Javascript on build
-  config[:host] = "https://struanfraser.co.uk"
+  config[:host] = "https://www.struanfraser.co.uk"
   activate :minify_css
   activate :minify_javascript
   ignore 'ignore/*'
