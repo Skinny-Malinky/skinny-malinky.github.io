@@ -73,7 +73,7 @@ activate :syntax, :line_numbers => true
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 set :trailing_slash, false
-set :build_dir, '../Skinny-Malinky.github.io'
+set :build_dir, './build'
 set :sass_source_maps, true
 set :sass, :output_style => "nested"
 
@@ -82,7 +82,7 @@ set :sass, :output_style => "nested"
 configure :build do
   # Minify CSS on build
   # Minify Javascript on build
-  config[:host] = "https://struanfraser.co.uk"
+  config[:host] = "https://www.struanfraser.co.uk"
   activate :minify_css
   activate :minify_javascript
   ignore 'ignore/*'

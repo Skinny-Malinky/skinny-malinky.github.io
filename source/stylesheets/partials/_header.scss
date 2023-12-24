@@ -181,7 +181,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 900;
-  margin-top: 3.5em;
+  margin: 3.5rem 0 .8rem;
   color: #ffffff;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -195,5 +195,6 @@
   li {
     margin-left: 1.3em;
     font-size: 1.2em;
+    float: none;
   }
 }

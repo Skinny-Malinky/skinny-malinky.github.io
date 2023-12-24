@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:title" content="Struan's blog">
+  <meta name="og:description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:url" content="https://www.struanfraser.co.uk">
+  <meta name="og:image" content="https://www.struanfraser.co.uk/images/hello.png">
+  <link rel="stylesheet" href="https://www.struanfraser.co.uk/stylesheets/main.css">
+  <title>
+  TVKit - A TV Prototyping Toolkit | Struan's blog
+  </title>
+</head>
+    <body>
+      <header class="site-header">
+    <div class="intro" id="top">
+  <a href="https://www.struanfraser.co.uk" class="site-title">Struan Fraser</a>
+
+    <div class="site-capabilities">
+      <ul>
+        <li>Product Design</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Creative Code</li>
+      </ul>
+    </div>
+  <div class="note">Places to say hello</div>
+    <ul class="info">
+        <li><a href="http://twitter.com/struanfraser">Twitter – @struanfraser</a></li>
+        <li><a rel="me" href="https://mastodon.scot/@struan">Mastodon – struan@mastodon.scot</a></li>
+      </ul>
+  <!-- <div class="note">Other Work —</div>
+    <ul class="info">
+        <li><a href="http://behance.net/struanfraser">Behance – @struanfraser</a></li>
+        <li><a href="http://github.com/skinny-malinky">Github – @Skinny-Malinky</a></li>
+      </ul> -->
+  </div>
+  
+    <div class="hover-container">
+      <div class="red-hand"></div>
+      <div class="green-hand"></div>
+      <div class="blue-hand"></div>
+    </div>
+</header>
+
+        <div class="nav-layout">
+        <nav>
+        <a href = "../../#main" class="back">Blog posts</a>
+        </nav>
+        <main id="main">
+        <article>
+          <div class="content-container">
+            <div class="content-margin">
+              <div class="post-description">
+                <h1>
+                  TVKit - A TV Prototyping Toolkit
+                </h1>
+                <h2 class="byline">
+                  Some more tools for prototyping TV experiences in Framer Classic
+                </h2>
+              </div>
+                  <figure>
+<img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel.gif" alt="The text types 'carousel = new Carousel' and a carousel appears in the preview window" class="full-width"></img>
+</figure>
+
+<p>I&rsquo;ve finally got access to Framer X again! Unfortunately I haven&rsquo;t had much access to time. Until I do work up the courage to begin properly learning React again, I have some tools that I&rsquo;d like to share. </p>
+
+<p>First of all, there&rsquo;s EasyNav.
+<a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio" target="_blank">
+<figure>
+<img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/easynav.png" alt="Five frames show a highlighted position in logical order. The center frame shows blue a highlight; the top frame shows a slightly higher highlight in the frame; the bottom frame, slightly lower; the left frame shows a highlight to the left and the right frame shows a highlight to the right." class="full-width"></img>
+<figcaption>
+This is EasyNav
+</figcaption>
+</figure>
+</a>
+<h3>Taking it back to the design view</h3>
+<p>I made EasyNav because I wanted a flexible tool that would allow me to quickly make D-Pad navigable prototypes without having to spend too much time with code. It also lowers the barrier of entry to those who want to use it while allowing you to use Framer&rsquo;s full feature set if you want to.</p></p>
+
+<h4>How it works</h4>
+
+<p>
+EasyNav reads the document and infers navigation from the position of each Frame. So if you draw a Frame above another one, EasyNav will allow you to navigate up to the frame above it. On top of that, it also allows you to override those default behaviours if you wish to block navigation for whatever reason. You can find more instructions in the example project on the Github page: <a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio">EasyNav for Framer Studio - Github</a>
+</p>
+
+<h3>TVKit</h3>
+
+<p>This project was made to give us a set of standard patterns to use for prototyping at YouView. I&rsquo;ve removed all of the YouView stuff but it still leaves you with quite a lot of power and has also taught me a great deal about javascript. I&rsquo;ll post some gifs to show the basics of it:
+<figure>
+<img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel-two.gif" alt="carousel = new Carousel is written in an IDE and the preview shows the carousel appear." class="full-width"></img>
+</figure>
+<figure>
+<img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/menu.gif" alt="menu = new Menu is written in an IDE and the preview shows the menu appear." class="full-width"></img>
+</figure>
+<figure>
+<img src="https://www.struanfraser.co.uk/blog/posts/2019/images/tv-kit/programme-tile.gif" alt="programmeTile = new ProgrammeTile is written in an IDE and the preview shows the tile appear" class="full-width"></img>
+</figure></p>
+
+<p>At YouView we have set these up to work with our APIs meaning we get all of the cloud metadata that we&rsquo;re not showing here. This means we have carousels that work with Search, Discover, the Main Menu, the Miniguide and any combined mix you might want. These components are also fully interactive. One of the problems I&rsquo;d started to notice however was how we could navigate between the components, this is where I created Navigables.</p>
+
+<p>Navigables work off of a fairly simple premise, choose the direction you want to go in, then choose the next Navigable you&rsquo;d like to highlight. An example of this might be</p>
+
+<p><code>myNavigable.onUpOut(-&gt; highlight.setContext(otherNavigable))</code></p>
+
+<p>I&rsquo;ve found it really useful for quickly spinning up prototypes as it allows you to start sending layer-based events based on keyboard input. It also works great with a <a href="https://flirc.tv/">FLIRC</a> and other controllers.</p>
+
+<p><a href="https://github.com/Skinny-Malinky/TV-Kit-for-Framer-Classic" target="_blank">You can find more examples and code here.</a></p>
+
+<p>If you try any of this, let me know! I suspect my documentation might trip you up here as I haven&rsquo;t been the most studious of documenters so <a href="https://twitter.com/struanfraser" target="_blank">give me a shout if you run into any problems</a>.</p>
+
+<p>I&rsquo;m going to try and find some time for Framer X now, though I&rsquo;ve got some research coming up and I&rsquo;ll likely have to fallback onto TVKit as it&rsquo;s served me well up until now!</p>
+
+                <hr />
+                <span class="post-meta">
+                  Published <em> 3 June 2019</em>
+                </span>
+                </article>
+                <a href="#top" class="back-to-top"></a>
+            </div>
+          </main>
+          </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:title" content="Struan's blog">
+  <meta name="og:description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
+  <meta name="og:url" content="https://www.struanfraser.co.uk">
+  <meta name="og:image" content="https://www.struanfraser.co.uk/images/hello.png">
+  <link rel="stylesheet" href="https://www.struanfraser.co.uk/stylesheets/main.css">
+  <title>
+  YouView Playback
+  </title>
+</head>
+
+	<body>
+		<header class="site-header">
+    <div class="intro" id="top">
+  <a href="https://www.struanfraser.co.uk" class="site-title">Struan Fraser</a>
+
+    <div class="site-capabilities">
+      <ul>
+        <li>Product Design</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Creative Code</li>
+      </ul>
+    </div>
+  <div class="note">Places to say hello</div>
+    <ul class="info">
+        <li><a href="http://twitter.com/struanfraser">Twitter – @struanfraser</a></li>
+        <li><a rel="me" href="https://mastodon.scot/@struan">Mastodon – struan@mastodon.scot</a></li>
+      </ul>
+  <!-- <div class="note">Other Work —</div>
+    <ul class="info">
+        <li><a href="http://behance.net/struanfraser">Behance – @struanfraser</a></li>
+        <li><a href="http://github.com/skinny-malinky">Github – @Skinny-Malinky</a></li>
+      </ul> -->
+  </div>
+  
+    <div class="hover-container">
+      <div class="red-hand"></div>
+      <div class="green-hand"></div>
+      <div class="blue-hand"></div>
+    </div>
+</header>
+
+		<div class="nav-layout">
+			<nav>
+				<a href="../#main" class="back">Portfolio posts</a>
+			</nav>
+			<div class="content-container">
+				<div class="content-margin">
+					<main id="main">
+						<article>
+							<div class="post-description">
+								<h1>YouView Playback</h1>
+								<h2 class="byline">How do we enrich the TV viewing experience without obscuring TV?</h2>
+							</div>
+							<div class="post-content">
+								<figure>
+<video id="new-jtt" poster="https://www.struanfraser.co.uk/images/portfolio/playback/watch-youview.jpg" autoplay muted controls src="https://www.struanfraser.co.uk/images/portfolio/playback/jump.mp4"></video>
+</figure>
+
+<p>
+I joined YouView at the start of the creation of its next-generation set-top-box software. As a design team we had to design a new system that was robust, flexible, familiar and contemporary. 
+</p>
+<p>
+Before we start, here's a few terms you'll need to know:
+</p>
+<dl>
+  <dt>Playback bar </dt>
+  <dd>The bar that appears on the screen to show you information about the currently playing programme (<a href="#new-jtt">pictured above</a>)
+  </dd>
+<dt>Trickplay</dt> 
+<dd>Rewinding, fast-forwarding, pausing and skipping while watching a programme</dd>
+<dt>Recordings</dt>
+<dd>Programmes recorded from live TV</dd>
+<dt>MyView</dt>
+<dd>The old area of the set-top box software where you would choose to play a recording
+</dd>
+<dt>MyTV</dt>
+<dd>The new area of the set-top box software where you would choose to play a recording
+</dd>
+<dt>D-Pad</dt>
+<dd>The arrow keys on your remote control used to navigate the system
+</dd>
+</dl>
+<h3>Introduction</h3>
+<p>
+Playback is the core of the set-top box experience and we aimed to allow people to watch programmes as quickly as possible. With the YouView set-top box you can watch live TV, recordings and livestreams which all feature the playback bar. Live TV is the first thing you see when you switch on the set-top box so it's important that navigating from there is clear and comprehensible. Playback should obscure the video feed as little as possible while offering clear affordances for trickplay options when they are available.
+</p>
+<h3>My role</h3>
+<p>
+At YouView we all participated in designing the whole system but each member of the design team was asked to lead within different clusters. When I was appointed to the playback bar, I was responsible for programme restart, the secondary title, end of playback, play next episode and d-pad trickplay. As a part of this role, I sat in on all of the cluster meetings to help us negotiate a position from the perspective of different kinds of user. Doing this has helped me develop a much stronger intuition for how to break down and deliver features and know when they're ready for release. 
+</p>
+<h3>Trickplay</h3>
+<p>
+Our process varied between projects depending on the needs of the subject. In order to demonstrate some of the steps we took in one particular case, I'm going to summarise the process of designing trickplay within the playback bar. As the design process is always a little messy and non-linear, I won't tell the whole story but if you want to know more, <a href="mailto:struan.fraser+portfolio@gmail.com">I'll be happy to get into the nitty gritty</a>.
+</p>
+<h3>
+Old feature
+</h3>
+<p>
+When we launched YouView's next generation software, we didn't have all of the features that were in the old software. We previously had a feature where you could type in the specific time to which you have watched (<a href="#old-jtt">pictured below</a>). The time had to be typed in before watching the recording. When people tried it we found that after making a mistake, navigating to course correct could take a lot of time. It was clear that we needed to afford the ability to jump through the programme while watching a recording. This feature was limited to recordings but we sought to find a way to navigate through a programme whether it's live, recorded or on demand in order to create a more coherent, learnable means of navigation.
+</p>
+
+<figure>
+<img id="old-jtt" src="https://www.struanfraser.co.uk/images/portfolio/playback/myview.jpg" alt="Youview's old My View screen showing a bar that allows you to start watching at a later point in the programme. The bar shows the time in minutes you will start at."></img>
+<figcaption>MyView with an old jump to time feature</figcaption>
+</figure>
+
+
+<figure>
+<img src="https://www.struanfraser.co.uk/images/portfolio/playback/old-playback.jpg" alt="YouView's old playback bar that shows the full extent of the three hour buffer."></img>
+<figcaption>YouView's old playback bar</figcaption>
+</figure>
+
+<h3>
+Wimbledon
+</h3>
+<p>
+We noticed that there were many more requests for the old feature when sports events were on because people had long recordings that were unwieldy to navigate using fast forward alone. Even at 64x the speed, it took a long time to navigate through six hours of broadcasting which was corroborated in interviews. This became a fairly reliable use case that we could test the product against and a criteria through which we could recruit users.
+</p>
+<h3>
+Previous research
+</h3>
+<p>
+When we first started building the next-generation software, I had a chance to sit-in on usability testing of the playback bar prototypes. Another member of my team was leading UX in the cluster at the time. We'd designed research featuring a series of tasks we could analyse. The research was conducted by an external agency which we sat in on. 
+</p>
+<p>
+We'd learned some key things that were relevant to trickplay. People usually use the video feed instead of the playhead to figure out where they are in a programme. This means feedback around the playhead – the active element – is unlikely to be seen. We rely on the events and images of the programme to orient ourselves in time. For example, we're much more likely to remember "Ashleigh lost her watch" than "I was 8 minutes into the programme". With the old feature we were relying on people remembering the duration they'd watched rather than recognising the scene they were on.
+</p>
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/playhead.png" alt="A magnified view of the playback bar's playhead."></img>
+  <figcaption>The playhead showing the current progress of the programme</figcaption>
+  </figure>
+  <p>
+Remote controls famously have an unwieldy number of buttons. When trying to navigate through a programme, people would often try and use the d-pad rather than the dedicated fast forward or rewind buttons. The number of buttons made task completion take longer than expected when considering <a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users">Hick's Law</a>. We aimed to make navigation possible using the d-pad and the context of the interface at that moment in time. This wasn't <em>always</em> possible for many reasons but that's a longer, different story.
+</p>
+<h3>Early concepts</h3>
+
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/concepts.png" alt="A large number of artboards showing playback bar concepts displayed on a Figma canvas."></img>
+  <figcaption>
+    A small selection of concepts
+    </figcaption>
+</figure>
+
+
+<p>
+Having spoken to some of the users who were loudly asking for this feature, we were able to figure out some primary use cases. One was trying to navigate very long sports programmes and the other was that the progress in the programme had been lost or watched somewhere else.
+</p>
+<p>
+As I'm telling this in retrospect. I hadn't collated all of this information by the time I'd started concepting so you'll see some of the ideas I had to work through before fully understanding the problem.
+</p>
+<p>
+One of the first concepts that appeared came from one of our developers who had built a concept that we could go forward with. It worked but it had no affordances to signal how to use it. Unfortunately they didn't have time to help me flesh out this idea further so I decided to develop a prototype framework myself. 
+</p>
+<p>
+The following is a recreation of that prototype. This was made using Framer Classic and all of the following prototypes are drafts designed to provoke a reaction, not to be a final design comp. They also tend to be a little glitchy but working perfectly is not the point. When testing it, we use a <a href="https://flirc.tv/more/flirc-usb">FLIRC controller</a> to convert remote control input into keyboard input. In the prototype, type a number in whole minutes that is less than the duration of the film.
+</p>
+<div class="prototype-feature">
+<a href="https://www.struanfraser.co.uk/prototypes/whole-minutes">The first prototype that takes input in whole minutes</a>
+</div>
+
+<!-- Integrate intro prtotoypes
+  <li>. - Fast forward</li>
+  <li>, - Rewind (Unfortunately, a standards update means this only works in some browsers)</li>
+  <li>0-9 - Number input</li>
+  <li>Enter - OK</li>
+-->
+
+<p>
+After putting this in front of people, I noticed that they would pause to think about where they were in the programme before comitting to pressing a button. Here are some of the things people were saying when I asked what people were thinking:
+</p>
+  <blockquote><p>Well I was about half way through, so I was looking at how long the programme was (30 minutes) and typing 15</p></blockquote>
+  <blockquote><p>I was changing an hour and 23 minutes into whole minutes which takes a second to work out</p>
+  </blockquote>
+<p>
+People were also typing in several numbers because they were looking for a particular scene. When asked, it went a bit like this:</p>
+<ul>
+  <li>*Types in 45*</li>
+  <li>Ah I haven't seen this bit yet, I need to go back</li>
+  <li>*Types in 30*</li>
+  <li>Okay, I've seen this</li>
+  <li>*Presses fast forward until they've found the point they have not yet seen*</li>
+</ul>
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/obs-research.png" alt="A young man using a main menu prototype with his key input shown to the side"></img>
+  <figcaption>A colleague demonstrating our lab setup in a Main Menu research session</figcaption>
+</figure>
+<p>
+One of the first things I chose to tackle was the changing from hours to minutes. I tried to create a prototype that figured out whether you were typing in hours or minutes based on the event and the number of digits you type. For long events this is important because three hours and 12 minutes can be difficult to translate to whole minutes. The reaction was similar to the previous prototype and people seemed to understand it but I still wasn't happy with it.
+</p>
+<div class="prototype-feature">
+<a href="https://www.struanfraser.co.uk/prototypes/hours-minutes">The second prototype allows you to type one hour and 3 minutes</a>
+</div>
+<p>
+From these tests I was starting to think that what we were doing was essentially building a bookmark tool but without the bookmark. You have to remember the time you've progressed through a programme: this could be handled by the system. To me this was a signal that the model was wrong and we were relying on recall rather than recognition. If people were going back and forth in the programme, you shouldn't have to press several buttons to quickly scan through it.
+</p>
+<h3>Getting closer</h3>
+<p>
+Our ambition was to use the d-pad to navigate the system but we already had lateral movement in the playback bar as that's how you navigate to the next episode.
+</p>
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/next-episode.png" alt="The playback bar with an image of the next episode peaking in at the bottom right. An arrow pointing to it reads 'right navigates here'"></img>
+  <figcaption>Pressing right goes to the next episode</figcaption>
+</figure>
+<p>
+For the time being, we couldn't use the d-pad for fast forward and rewind. However the playback bar has several states. When using trickplay the next episode is no longer available. I wanted to create some kind of affordance that showed you can jump longer distances once you're in a trickplay state.
+</p>
+<p>
+I decided that we should only show the affordance for a long jump once fast-forward is used as that shows an intention to navigate the programme.
+</p>
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/jump-screen.png" alt="A screenshot of a prototype showing numbers that allow you to quickly jump to later points in the programme."></img>
+  <figcaption>
+  Jumping to later points in the programme
+  </figcaption>
+</figure>
+
+
+
+<h3>Rapid iterative testing</h3>
+<p>
+During the testing of the playback bar, I helped introduce <a href="https://uxmag.com/articles/the-rite-way-to-prototype">Rapid Iterative Testing and Evaluation (RITE)</a> which was not previously possible. Having a high fidelity prototyping framework meant we could respond to feedback much more quickly. The research was designed to ask people to find a specific scene in a programme. We tested with 3 popular programmes: Planet Earth, Strictly Come Dancing and The Apprentice. For each we asked them to find: Planet Earth's behind the scenes section, the scoring for Strictly and the boardroom section of The Apprentice. They could choose the programme they were most familiar with.
+</p>
+<p>
+This allowed us to determine if the association of visual affordances to functionality was clear and that people could orient themself within a programme. I made many small changes during these sessions. These included: 
+</p>
+<ul>
+  <li>Animating the playhead to make the change in time clearer</li>
+  <li>Changing the video feed at the end of the playhead animation to associate the animation with the time change</li>
+  <li>Animating the selected number to jump to</li>
+</ul>
+<p>
+This was extremely successful and the feedback was invaluable in making small improvements that made the micro-interactions feel tighter and more direct.
+</p>
+<p>
+  <div class="prototype-feature">
+<a href="https://www.struanfraser.co.uk/prototypes/percent-nav">You can try the prototype that came out of this session here.</a>
+</div>
+</p>
+<h3>Accessibility</h3>
+<p>I had some concerns that the animation involved in the interaction could be a problem for those with vestibular disorders. The transient nature of the interaction could also make it difficult to complete the action in the alloted time. To give room for decision-making, we used similar timeouts that we'd used in other areas of the system that had been tested with the Royal National Institute of Blind People. 
+  </p>
+  <p>
+  Alongside this, the feature is designed with the expectation that mistakes will be made and can be easily corrected so this should reduce decision making time. We also made sure to allow for use of the feature with <a href="https://support.youview.com/youview-box/accessibility/using-the-grid-2-software/">Grid 2</a> and Alexa to allow for use of other input devices. These are not constrained by the same timeout problems and are used mostly independently of the set-top box interface.</p>
+
+<h3>Documentation</h3>
+
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/documentation-small.png" alt="A summary of our research."></img>
+  <figcaption>The Wiki page for the research</figcaption>
+  </figure>
+
+<p>
+Our work was documented on our collective wiki but working with and next to the development team meant we could collaborate in order to understand where and how we were making trade-offs. This was important for planning future sprints and understanding the development cost of each of the constituent elements of the feature.
+</p>
+<p>
+In this case, I showed videos of the various iterations with downloadable copies of the prototypes. This was documented next to findings from the research sessions. We used this as a discussion point for cluster meetings. One of our listed key-aims was to reduce the time people spent using trickplay to allow them to watch TV uninterrupted.
+</p>
+<h3>Delivery & reception</h3>
+<p>
+When planning how we would sequence the delivery of the feature, we decided to release it before adding any of the visual affordances and it now worked without having to use trickplay first. When it was released, some people using the feature thought it was strange and hard to understand.
+</p>
+<p>
+We often discussed people's expectations from the old software and how changes can be confusing. In this case I think we had to wait until we had visual affordances before releasing the feature. In the planning process, I became too enthused about releasing the feature and it sounded like it would be a long time before it was planned for delivery so I agreed to releasing it in a smaller form. If I had to do this again, I would show the value this feature has in relation to other major projects with our business partners and how it would impact their customers. I don't think we communicated the value of the full feature well enough to ensure that it was delivered in a complete form.
+</p>
+<p>
+That being said, it does allow people to do what it was intended to do and people are now using it to jump through those long sports programmes and get to their favourite TV scenes. People are spending less time in trickplay and enjoying their TV recordings.
+</p>
+<figure>
+  <img src="https://www.struanfraser.co.uk/images/portfolio/playback/watch-youview.jpg" alt="A summary of our research."></img>
+  </figure>
+								<hr />
+								<span class="post-meta">
+									<em>YouView</em> 2017 - 2019
+								</span>
+							</div>
+						</article>
+					</main>
+					<h1 style="margin-top:15rem;">More posts</h1>
+  <article class="clean-text">
+<a href="/portfolio/takes-a-village#main">    <div class="summary" style="margin-bottom: 2rem;">
+      <h2>
+        It Takes a Village
+      </h2>
+      <h3 class="byline">
+        Assisting family learning by removing barriers that prevent fathers from participating in preparing for a newborn baby
+      </h3>
+      <span class="post-meta">
+      <hr />
+      <em>Glasgow School of Art</em> 2020 
+      </span>
+</a>    </article>
+      <article class="clean-text">
+<a href="/portfolio/youview-guide#main">    <div class="summary" style="margin-bottom: 2rem;">
+      <h2>
+        YouView Guide
+      </h2>
+      <h3 class="byline">
+        How can we make TV easier to find without disrupting an evening's viewing?
+      </h3>
+      <span class="post-meta">
+      <hr />
+      <em>YouView</em> 2015 - 2017 
+      </span>
+</a>    </article>
+          <article class="clean-text">
+<a href="/portfolio/cropshare#main">    <div class="summary" style="margin-bottom: 2rem;">
+      <h2>
+        CropShare
+      </h2>
+      <h3 class="byline">
+        How can we create stronger bonds between food growers and others who live in the city?
+      </h3>
+      <span class="post-meta">
+      <hr />
+      <em>Duncan of Jordanstone</em> 2014 
+      </span>
+</a>    </article>
+    
+				</div>
+			</div>
+			<a href="#top" class="back-to-top"></a>
+		</div>
+	</body>
+</html>

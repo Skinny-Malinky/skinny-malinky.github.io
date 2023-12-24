@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans:400,700i&display=swap');
+
+body {
+  font-family: "Fira Sans", "Helvetica Neue";
+  line-height: 1.7rem;
+  background-color: #292732;
+  font-size: 16px;
+  color: #1e1e1e;
+  margin: 4em 0;
+  text-rendering: optimizeLegibility;
+}
+main {
+  max-width: 90ch;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #e2e2e2;
+}
+code {
+  background-color: rgb(204, 204, 204);
+  padding: 0.8rem;
+  line-height: 2rem;
+  margin-bottom: 10rem;
+  border-radius: 0.2em;
+  font-family: Fira Code, monospace;
+}
+pre {
+  margin: 1.5rem 0;
+}
+p {
+  line-height: 1.8rem;
+}
+p > code {
+  padding: 0.2rem;
+}
+h1:not(:first-of-type) {
+  margin-top: 4rem;
+}
+h1, h2{
+  font-weight: 700;
+  font-family: "Fira Sans";
+  font-style: italic;
+}
+li + ol,
+li + ul {
+  padding-left: 1.9rem;
+  padding-bottom: 0.5rem;
+}
+figure {
+  background-color: rgb(204, 204, 204);
+  margin: 0;
+  border-radius: 0.2em;
+  padding-left: 1rem;
+}

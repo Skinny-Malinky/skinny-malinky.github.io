@@ -1,0 +1,139 @@
+/* line 6, ../sass/test.scss */
+a {
+  color: black;
+}
+
+/* line 9, ../sass/test.scss */
+a:hover {
+  color: #969696;
+}
+
+/* line 12, ../sass/test.scss */
+a:visited {
+  color: black;
+}
+
+/* line 15, ../sass/test.scss */
+a:active {
+  color: black;
+}
+
+/* line 18, ../sass/test.scss */
+body {
+  background-image: url("../images/bg.png");
+}
+
+/* line 21, ../sass/test.scss */
+#background {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 28, ../sass/test.scss */
+#container {
+  width: 1024px;
+  margin-top: 80px;
+  min-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 35, ../sass/test.scss */
+#topbar {
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  top: 0px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+/* line 42, ../sass/test.scss */
+#topbar #topcontent {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 50, ../sass/test.scss */
+#topbar #topcontent h1 {
+  font-family: 'Sanchez';
+  font-weight: 401;
+  font-size: 1.25em;
+  color: black;
+  display: inline;
+}
+/* line 57, ../sass/test.scss */
+#topbar #topcontent p {
+  font-family: 'Roboto Slab';
+  font-weight: 100%;
+  color: black;
+  display: inline;
+}
+/* line 63, ../sass/test.scss */
+#topbar #topcontent form {
+  display: inline;
+  float: right;
+}
+
+/* line 69, ../sass/test.scss */
+#addrss {
+  margin: 0px;
+}
+/* line 71, ../sass/test.scss */
+#addrss button {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* line 77, ../sass/test.scss */
+.newpost {
+  background-color: white;
+  height: 400px;
+  width: 200px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+/* line 88, ../sass/test.scss */
+.newpost p {
+  font-family: 'Roboto Slab';
+  font-weight: 100;
+  margin-top: 0px;
+}
+/* line 93, ../sass/test.scss */
+.newpost img {
+  height: 200px;
+  width: 200px;
+}
+/* line 97, ../sass/test.scss */
+.newpost h1 {
+  font-family: 'Sanchez';
+  font-weight: 401;
+  font-size: 1.25em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* line 104, ../sass/test.scss */
+.newpost .extract {
+  margin: 15px;
+  margin-top: 6px;
+  height: 170px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: no-wrap;
+}
