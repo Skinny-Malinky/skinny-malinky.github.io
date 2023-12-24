@@ -5,16 +5,66 @@
   <id>http://struanfraser.co.uk/blog</id>
   <link href="http://struanfraser.co.uk/blog"/>
   <link href="http://struanfraser.co.uk/feed.xml" rel="self"/>
-  <updated>2019-06-03T17:39:00+01:00</updated>
+  <updated>2023-12-23T20:56:00+00:00</updated>
   <author>
     <name>Struan Fraser</name>
   </author>
+  <entry>
+    <title>A Little Bit of Christmas Code</title>
+    <link rel="alternate" href="http://struanfraser.co.uk/blog/a-little-christmas"/>
+    <id>http://struanfraser.co.uk/blog/a-little-christmas</id>
+    <published>2023-12-23T20:56:00+00:00</published>
+    <updated>2023-12-24T04:58:53+00:00</updated>
+    <author>
+      <name>Struan Fraser</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="../images/2023/santr.jpeg" alt="A p5js sketch showing a daft wee set of choices for Santa to make from the head elf" class="full-width"&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;h3&gt;Hello again test test, is anyone there&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s been a long time since I&amp;rsquo;ve posted anything here and like everyone, life&amp;rsquo;s very different to what it was in 2019. I&amp;rsquo;ve finished a bout of studying citizenship and design, I&amp;rsquo;ve worked with a group of friends to make some fun wee games and I&amp;rsquo;ve started a new job in a new city.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve just uploaded a little Christmas sketch as invited to by the ever kind and creative &lt;a href="https://twitter.com/vividfax"&gt;Rianna&lt;/a&gt; and &lt;a href="https://twitter.com/mtrc"&gt;Mike&lt;/a&gt;. It&amp;rsquo;s now available on day 20 of the Generative Advent Calendar. You&amp;rsquo;ll have to forgive the way it looks, it&amp;rsquo;s been a very busy Christmas and I haven&amp;rsquo;t written code properly for some time. That being said though, I&amp;rsquo;m pleased with what it turned into in it&amp;rsquo;s &amp;ldquo;My first HTML project&amp;rdquo; style. I strongly recommend you have a look at the other contributors though, they&amp;rsquo;re much better!&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;a href="https://generativeadvent.itch.io/generative-advent-2023"&gt;&lt;img src="../images/2023/advent.jpg" alt="A p5js sketch illustrating a house with 25 windows at Christmas time" class="full-width"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;figcaption&gt;Generative Advent 2023&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the depths of the pandemic, Rianna and I co-worked on a bunch of little creative sketches which turned into Games for Crows. I spent a good bit more time thinking about game design than I ever had previously and we carved out a small niche in Games for Crows. We wanted to make things that were reflective and relaxing, it seemed appropriate in the midst of a pandemic. Rianna then became extremely prolific and produced a whole multitude of games tools and fidget toys.&lt;/p&gt;
+
+&lt;p&gt;Later we invited Ryan and Matt to both write and produce illustrations for a game that plays with different ideas of who we are and how we participate in our community and wider society. Those games are still in a cupboard that has been firmly shut since the pandemic but I will get round to releasing at least one of them this year.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src="../images/2023/project-arc.png" alt="A browser window showing an abstract 3d visualisation of an alien planet" class="full-width"&gt;&lt;/img&gt;
+&lt;figcaption&gt;Project Arc&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;And back to the Christmas sketch. This was a very small contribution to imagining things differently. Years ago, I heard an expert describe how authors spend chapters and chapters trying to get the reader to project themself onto the protagonist in a book. In a game, you need only pick up the controller and push forward, and magically the projection has already happened. You&amp;rsquo;re movement and the character&amp;rsquo;s is one. It&amp;rsquo;s so much easier to reveal new possibilities and ideas of what&amp;rsquo;s possible through characters in computer games because projection and the associated empathy is much smoother. Anyway, I hope you all have some proper restful holidays, I&amp;rsquo;m off to drink a few pints of gravy!&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;a href="https://gamesforcrows.itch.io/"&gt;
+&lt;img src="../images/2023/gfc.png" alt="A screenshot of the Games for Crows itch page" class="full-width"&gt;&lt;/img&gt;
+&lt;/a&gt;
+&lt;figcaption&gt;Games for Crows on itch.io&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;P.S. Here are some books I really liked this year.&lt;/p&gt;
+
+&lt;div class="gallery"&gt;
+    &lt;img src="../images/2023/lazy.jpeg" alt="Lazy City by Rachel Connolly"&gt;&lt;/img&gt;
+    &lt;img src="../images/2023/dawn.jpeg" alt="Dawn of Everything by David Graeber and David Wengrow"&gt;&lt;/img&gt;
+    &lt;img src="../images/2023/pastoral.jpg" alt="English Pastoral by James Rebanks"&gt;&lt;/img&gt;
+    &lt;img src="../images/2023/zami.jpg" alt="Zami: A New Spelling of My Name A Biomythography"&gt;&lt;/img&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <title>TVKit - A TV Prototyping Toolkit</title>
     <link rel="alternate" href="http://struanfraser.co.uk/blog/tv-kit"/>
     <id>http://struanfraser.co.uk/blog/tv-kit</id>
     <published>2019-06-03T17:39:00+01:00</published>
-    <updated>2020-10-23T11:13:00+01:00</updated>
+    <updated>2022-01-10T20:26:15+00:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
@@ -75,7 +125,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
     <link rel="alternate" href="http://struanfraser.co.uk/blog/alpha-channel-experiment"/>
     <id>http://struanfraser.co.uk/blog/alpha-channel-experiment</id>
     <published>2018-09-27T23:00:00+01:00</published>
-    <updated>2022-01-04T20:28:06+00:00</updated>
+    <updated>2022-01-10T20:26:08+00:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
@@ -116,7 +166,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
     <link rel="alternate" href="http://struanfraser.co.uk/blog/open-frameworks-and-processing"/>
     <id>http://struanfraser.co.uk/blog/open-frameworks-and-processing</id>
     <published>2018-08-07T18:09:00+01:00</published>
-    <updated>2022-01-04T20:28:06+00:00</updated>
+    <updated>2022-01-10T20:26:09+00:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
@@ -197,7 +247,7 @@ EasyNav reads the document and infers navigation from the position of each Frame
     <link rel="alternate" href="http://struanfraser.co.uk/blog/tv-and-framer"/>
     <id>http://struanfraser.co.uk/blog/tv-and-framer</id>
     <published>2018-04-22T00:00:00+01:00</published>
-    <updated>2022-01-04T20:28:06+00:00</updated>
+    <updated>2022-01-10T20:26:08+00:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
