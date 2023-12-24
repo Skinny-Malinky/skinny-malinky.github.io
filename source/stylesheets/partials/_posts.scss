@@ -54,7 +54,7 @@ article {
     z-index: 1;
     &::before {
       background-color: hsl(0, 0, 20);
-      content: "";
+      content: '';
       position: absolute;
       height: calc(100% - 0.5em);
       width: 100%;
@@ -97,7 +97,7 @@ article {
   font-family: $heading-font-family;
   margin: 0 auto 0;
   &:before {
-    content: "← ";
+    content: '← ';
   }
 }
 .prototype-feature {
@@ -118,6 +118,6 @@ article {
   justify-content: center;
   > * {
     margin-left: 1em;
-    width: unset;
+    width: 300px;
   }
 }

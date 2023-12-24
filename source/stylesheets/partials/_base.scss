@@ -30,10 +30,10 @@ body {
   color: white;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
   font-kerning: normal;
   font-smooth: always;
   -webkit-font-smoothing: always;
@@ -165,6 +165,9 @@ h2 {
   font-size: 2.33em;
   line-height: 1.2;
 }
+h3 {
+  line-height: 1.4;
+}
 h4 {
   font-size: 1.38em;
   margin-top: 1.5em;
@@ -187,11 +190,11 @@ hr {
  * Blockquotes
  */
 blockquote {
-  color: "white";
+  color: 'white';
   border-left: 4px solid $grey-color-light;
   padding-left: 30px;
   & > p {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 500;
     font-style: italic;
@@ -199,8 +202,8 @@ blockquote {
   }
 }
 q {
-  font-family: "Montserrat", sans-serif;
-  quotes: "“" "”" "‘" "’";
+  font-family: 'Montserrat', sans-serif;
+  quotes: '“' '”' '‘' '’';
   font-size: 1em;
   font-style: italic;
   & :before {
@@ -213,7 +216,7 @@ q {
   }
 }
 aside > blockquote {
-  color: "white";
+  color: 'white';
   border-left: 4px solid #b6eddf;
   padding-left: 30px;
   float: left;

@@ -11,7 +11,7 @@ gem 'tzinfo-data'
 # Middleman Gems
 gem "middleman"
 gem "middleman-blog"
-gem "middleman-livereload"
+gem "middleman-livereload", "~> 3.4.7"
 gem "middleman-syntax"
 
 gem 'redcarpet'

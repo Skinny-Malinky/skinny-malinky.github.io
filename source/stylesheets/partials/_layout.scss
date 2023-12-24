@@ -18,10 +18,9 @@ main {
     position: relative;
     z-index: 1;
     font-size: 2rem;
-    line-height: 1.4;
     margin: 1rem 0;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       height: calc(100% - 1.3em);
       width: 100%;
